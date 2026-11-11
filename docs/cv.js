@@ -292,8 +292,9 @@ function layout() {
   paper.style.transform = "none";
   fitContact(paper);
   const pageH = S.cv.page.size === "a4" ? (297 / 25.4) * 96 : 11 * 96;
-  const over = paper.scrollHeight - pageH;
   const pb = $(".pagebreak", paper);
+  pb.hidden = true; // the marker sits at the page edge, so measure without it
+  const over = paper.scrollHeight - pageH;
   pb.style.top = pageH + "px";
   pb.hidden = over <= 1;
   const fit = $("#fit");
