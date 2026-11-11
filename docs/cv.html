@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV Tailor</title>
+  <meta name="description" content="Tailor your CV to a job posting: ATS keyword check, in-place editing, optional Claude rewrite, PDF export. Your CV stays in your browser.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='6' y='3' width='20' height='26' rx='3' fill='%230f766e'/><path d='M11 11h10M11 16h10M11 21h6' stroke='white' stroke-width='2' stroke-linecap='round'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cv.css">
+  <style id="pagestyle">@page { size: letter; margin: 0; }</style>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap cvtop">
+      <div>
+        <a class="back" href="./">← Internship radar</a>
+        <h1>CV tailor</h1>
+        <p class="sub" id="mode">Loading…</p>
+      </div>
+      <div class="clinks">
+        <label class="btn ghost filebtn">Import .docx<input type="file" id="docx" accept=".docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document" hidden></label>
+        <button class="btn" id="pdf" type="button" disabled>Download PDF</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap cvwrap">
+    <aside class="cvside">
+      <section class="card" id="jobcard">
+        <h2 class="h">Job posting</h2>
+        <div id="jobinfo" class="muted small"></div>
+        <textarea id="jd" rows="9" placeholder="Paste the full job description here: responsibilities, requirements, nice-to-haves."></textarea>
+      </section>
+
+      <section class="card" id="scorecard">
+        <div class="scorehead">
+          <h2 class="h">ATS match</h2>
+          <span id="scoreval" class="scoreval">–</span>
+        </div>
+        <div class="meter"><span id="meterfill"></span></div>
+        <p id="kwsource" class="muted small"></p>
+        <div id="kwmissing" class="chips"></div>
+        <div id="kwcovered" class="chips"></div>
+        <h3 class="h3">Format checks</h3>
+        <ul id="checks" class="checks"></ul>
+      </section>
+
+      <section class="card" id="aicard">
+        <h2 class="h">Tailor with Claude</h2>
+        <div id="keyform">
+          <p class="muted small">Claude rewrites your bullets to match this posting without inventing anything. It uses your own Anthropic API key; each run costs roughly $0.05–0.20. The key stays in this browser, and requests go straight from your browser to Anthropic.</p>
+          <input id="apikey" type="password" autocomplete="off" placeholder="sk-ant-…" aria-label="Anthropic API key">
+          <label class="chk small"><input type="checkbox" id="remember"> Remember the key in this browser</label>
+          <button class="btn" id="savekey" type="button">Use this key</button>
+          <p class="muted small">Get a key at <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener">console.anthropic.com</a>.</p>
+        </div>
+        <div id="keyset" hidden>
+          <p class="small">Key ending <code id="keytail"></code> · <button class="linkbtn" id="forgetkey" type="button">Forget key</button></p>
+          <label class="small selrow">Model
+            <select id="model">
+              <option value="claude-opus-5-5">Claude Opus 5.5 (best)</option>
+              <option value="claude-sonnet-5-5">Claude Sonnet 5.5 (about half the cost)</option>
+            </select>
+          </label>
+          <button class="btn" id="tailor" type="button">Tailor my CV for this job</button>
+        </div>
+        <p id="aistatus" class="small" role="status"></p>
+        <div id="airesult"></div>
+      </section>
+
+      <section class="card" id="vercard">
+        <h2 class="h">Versions</h2>
+        <ul id="versions" class="versions"></ul>
+        <div class="row">
+          <button class="btn ghost" id="tomaster" type="button">Save as master CV</button>
+          <button class="btn ghost" id="resetmaster" type="button">Reset to master</button>
+        </div>
+        <div class="row">
+          <button class="linkbtn" id="backup" type="button">Download backup</button>
+          <label class="linkbtn">Restore backup<input type="file" id="restore" accept="application/json,.json" hidden></label>
+          <button class="linkbtn danger" id="wipe" type="button">Delete all CV data</button>
+        </div>
+        <p class="muted small">Your CV and versions are saved only in this browser. Download a backup to move them to another device.</p>
+      </section>
+    </aside>
+
+    <section class="cvmain">
+      <div class="paperbar">
+        <span id="fit" class="fit"></span>
+        <span class="spacer"></span>
+        <button class="btn ghost" id="undo" type="button" disabled>Undo</button>
+        <label class="small selrow">Page
+          <select id="pagesize"><option value="letter">US Letter</option><option value="a4">A4</option></select>
+        </label>
+      </div>
+      <div class="paperwrap" id="paperwrap">
+        <div id="empty" class="emptycv">
+          <h2>Start with your current CV</h2>
+          <p>Import your CV as a Word file (.docx). It's read in this browser and saved only here. It never leaves your device unless you run "Tailor with Claude".</p>
+          <label class="btn filebtn">Import .docx<input type="file" id="docx2" accept=".docx" hidden></label>
+        </div>
+        <article id="paper" class="paper" hidden></article>
+        <div id="tools" class="tools" hidden></div>
+      </div>
+      <p class="muted small tip">Click any line on the page to edit it. Enter adds a bullet, ⌘/Ctrl+B toggles bold. Use "Download PDF", then choose <b>Save as PDF</b> in the print dialog.</p>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script type="module" src="cv.js"></script>
+</body>
+</html>

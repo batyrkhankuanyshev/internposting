@@ -90,6 +90,9 @@ h1 { margin: 0; font-size: 22px; letter-spacing: -.01em; }
 .acts { display: flex; gap: 4px; flex-shrink: 0; }
 .acts button { border: 1px solid var(--line); background: var(--surface); color: var(--muted); border-radius: 6px; font-size: 12px; padding: 2px 7px; cursor: pointer; }
 .acts button.on { color: var(--ok); border-color: var(--ok); }
+.acts a.tailor { border: 1px solid var(--accent); color: var(--accent); border-radius: 6px; font-size: 12px; padding: 2px 7px; white-space: nowrap; }
+.acts a.tailor:hover { text-decoration: none; background: var(--accent-soft); }
+.sub a { color: var(--accent); }
 
 .quiet { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; }
 .quiet a { color: var(--muted); }

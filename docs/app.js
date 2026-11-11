@@ -44,7 +44,8 @@
     const li2 = j.linkedin_url ? ` · <a href="${esc(j.linkedin_url)}" target="_blank" rel="noopener">LinkedIn</a>` : "";
     li.innerHTML = `<div><div class="t">${badges}<a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a></div>
       <div class="m">${meta}${li2}</div></div>
-      <div class="acts"><button data-mark="applied" class="${mark === "applied" ? "on" : ""}" title="Mark as applied">✓ Applied</button>
+      <div class="acts"><a class="tailor" href="cv.html?job=${encodeURIComponent(j.key)}" title="Tailor your CV to this posting">Tailor CV</a>
+      <button data-mark="applied" class="${mark === "applied" ? "on" : ""}" title="Mark as applied">✓ Applied</button>
       <button data-mark="hidden" class="${mark === "hidden" ? "on" : ""}" title="Hide this posting">Hide</button></div>`;
     li.querySelectorAll("button[data-mark]").forEach((b) => b.addEventListener("click", () => {
       const m = b.dataset.mark;
