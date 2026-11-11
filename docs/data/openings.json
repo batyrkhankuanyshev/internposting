@@ -1,16 +1,24 @@
 {
  "meta": {
-  "linkedin_last_ok": "2026-11-11T07:57:43Z",
+  "linkedin_last_ok": "2026-11-11T19:37:07Z",
   "linkedin_period": "r604800",
-  "generated_at": "2026-11-11T07:57:43Z",
+  "generated_at": "2026-11-11T19:37:07Z",
   "first_run_at": "2026-11-11T06:57:35Z"
  },
  "sources": [
   {
-   "company": "Blackstone",
+   "company": "Carlyle Group",
    "type": "workday",
    "ok": false,
-   "error": "HTTPError: 500 Server Error: Internal Server Error for url: https://blackstone.wd1.myworkdayjobs.com/wday/cxs/blackstone/Blackstone_Campus_Careers/jobs",
+   "error": "HTTPError: 502 Server Error: Bad Gateway for url: https://carlyle.wd1.myworkdayjobs.com/wday/cxs/carlyle/carlyle/jobs",
+   "seen": 0,
+   "hk": 0
+  },
+  {
+   "company": "PIMCO",
+   "type": "workday",
+   "ok": false,
+   "error": "HTTPError: 502 Server Error: Bad Gateway for url: https://pimco.wd1.myworkdayjobs.com/wday/cxs/pimco/pimco-careers/jobs",
    "seen": 0,
    "hk": 0
   },
@@ -18,39 +26,39 @@
    "company": "3M",
    "type": "workday",
    "ok": true,
-   "seen": 206,
+   "seen": 207,
    "hk": 0,
-   "secs": 13.9
+   "secs": 17.5
   },
   {
    "company": "AIA Group",
    "type": "workday",
    "ok": true,
-   "seen": 246,
+   "seen": 247,
    "hk": 9,
-   "secs": 20.0
+   "secs": 24.1
   },
   {
    "company": "Accenture",
    "type": "workday",
    "ok": true,
-   "seen": 536,
+   "seen": 528,
    "hk": 0,
-   "secs": 60.5
+   "secs": 57.9
   },
   {
    "company": "Airwallex",
    "type": "ashby",
    "ok": true,
-   "seen": 479,
+   "seen": 485,
    "hk": 0,
-   "secs": 0.2
+   "secs": 0.3
   },
   {
    "company": "AlphaSights",
    "type": "greenhouse",
    "ok": true,
-   "seen": 64,
+   "seen": 63,
    "hk": 2,
    "secs": 0.1
   },
@@ -60,7 +68,7 @@
    "ok": true,
    "seen": 100,
    "hk": 0,
-   "secs": 1.1
+   "secs": 1.2
   },
   {
    "company": "BNP Paribas",
@@ -76,7 +84,7 @@
    "ok": true,
    "seen": 180,
    "hk": 0,
-   "secs": 3.2
+   "secs": 3.3
   },
   {
    "company": "Bain Capital",
@@ -84,7 +92,7 @@
    "ok": true,
    "seen": 21,
    "hk": 0,
-   "secs": 2.4
+   "secs": 3.3
   },
   {
    "company": "Bank of America",
@@ -92,7 +100,7 @@
    "ok": true,
    "seen": 5,
    "hk": 0,
-   "secs": 0.9
+   "secs": 1.1
   },
   {
    "company": "Bank of China (HK)",
@@ -100,7 +108,7 @@
    "ok": true,
    "seen": 272,
    "hk": 5,
-   "secs": 1.4
+   "secs": 1.0
   },
   {
    "company": "Barclays",
@@ -108,15 +116,23 @@
    "ok": true,
    "seen": 237,
    "hk": 3,
-   "secs": 7.1
+   "secs": 9.1
   },
   {
    "company": "Blackstone",
    "type": "workday",
    "ok": true,
-   "seen": 93,
+   "seen": 19,
    "hk": 0,
-   "secs": 4.2
+   "secs": 2.8
+  },
+  {
+   "company": "Blackstone",
+   "type": "workday",
+   "ok": true,
+   "seen": 95,
+   "hk": 0,
+   "secs": 5.1
   },
   {
    "company": "Boston Consulting Group (BCG)",
@@ -124,15 +140,15 @@
    "ok": true,
    "seen": 0,
    "hk": 0,
-   "secs": 2.3
+   "secs": 4.1
   },
   {
    "company": "Bridgewater Associates",
    "type": "greenhouse",
    "ok": true,
-   "seen": 19,
+   "seen": 20,
    "hk": 0,
-   "secs": 0.0
+   "secs": 0.1
   },
   {
    "company": "CIBC",
@@ -140,31 +156,23 @@
    "ok": true,
    "seen": 33,
    "hk": 0,
-   "secs": 4.6
+   "secs": 4.5
   },
   {
    "company": "CLSA",
    "type": "workday",
    "ok": true,
-   "seen": 269,
+   "seen": 268,
    "hk": 0,
-   "secs": 13.4
-  },
-  {
-   "company": "Carlyle Group",
-   "type": "workday",
-   "ok": true,
-   "seen": 54,
-   "hk": 0,
-   "secs": 3.2
+   "secs": 15.9
   },
   {
    "company": "Chubb Life Insurance",
    "type": "oracle",
    "ok": true,
-   "seen": 122,
+   "seen": 123,
    "hk": 0,
-   "secs": 3.5
+   "secs": 3.4
   },
   {
    "company": "Citigroup",
@@ -172,31 +180,31 @@
    "ok": true,
    "seen": 7,
    "hk": 3,
-   "secs": 0.9
+   "secs": 0.7
   },
   {
    "company": "Citigroup",
    "type": "workday",
    "ok": true,
-   "seen": 402,
+   "seen": 407,
    "hk": 3,
-   "secs": 30.1
+   "secs": 31.1
   },
   {
    "company": "Commonwealth Bank",
    "type": "workday",
    "ok": true,
-   "seen": 57,
+   "seen": 56,
    "hk": 0,
-   "secs": 4.7
+   "secs": 5.2
   },
   {
    "company": "DBS Bank (HK)",
    "type": "workday",
    "ok": true,
-   "seen": 371,
+   "seen": 370,
    "hk": 0,
-   "secs": 15.3
+   "secs": 17.8
   },
   {
    "company": "Dymon Asia",
@@ -204,7 +212,7 @@
    "ok": true,
    "seen": 15,
    "hk": 0,
-   "secs": 0.0
+   "secs": 0.1
   },
   {
    "company": "ESR Group",
@@ -212,7 +220,7 @@
    "ok": true,
    "seen": 40,
    "hk": 0,
-   "secs": 0.1
+   "secs": 0.2
   },
   {
    "company": "EY",
@@ -220,7 +228,7 @@
    "ok": true,
    "seen": 36,
    "hk": 0,
-   "secs": 2.2
+   "secs": 2.3
   },
   {
    "company": "Evercore",
@@ -228,15 +236,15 @@
    "ok": true,
    "seen": 44,
    "hk": 0,
-   "secs": 0.4
+   "secs": 0.6
   },
   {
    "company": "Fidelity International",
    "type": "workday",
    "ok": true,
-   "seen": 57,
+   "seen": 59,
    "hk": 0,
-   "secs": 5.0
+   "secs": 5.1
   },
   {
    "company": "Fidelity International",
@@ -244,13 +252,13 @@
    "ok": true,
    "seen": 28,
    "hk": 4,
-   "secs": 0.4
+   "secs": 0.6
   },
   {
    "company": "Flow Traders",
    "type": "greenhouse",
    "ok": true,
-   "seen": 42,
+   "seen": 43,
    "hk": 2,
    "secs": 0.1
   },
@@ -260,13 +268,13 @@
    "ok": true,
    "seen": 125,
    "hk": 1,
-   "secs": 2.6
+   "secs": 2.4
   },
   {
    "company": "IMC Trading",
    "type": "greenhouse",
    "ok": true,
-   "seen": 157,
+   "seen": 156,
    "hk": 3,
    "secs": 0.1
   },
@@ -274,9 +282,9 @@
    "company": "Invesco",
    "type": "workday",
    "ok": true,
-   "seen": 158,
+   "seen": 156,
    "hk": 0,
-   "secs": 3.1
+   "secs": 4.8
   },
   {
    "company": "JLL",
@@ -284,15 +292,15 @@
    "ok": true,
    "seen": 348,
    "hk": 0,
-   "secs": 21.9
+   "secs": 30.0
   },
   {
    "company": "JPMorgan Chase",
    "type": "oracle",
    "ok": true,
-   "seen": 214,
+   "seen": 212,
    "hk": 2,
-   "secs": 4.0
+   "secs": 3.8
   },
   {
    "company": "Jane Street",
@@ -300,7 +308,7 @@
    "ok": true,
    "seen": 220,
    "hk": 17,
-   "secs": 0.3
+   "secs": 0.4
   },
   {
    "company": "Jump Trading",
@@ -308,7 +316,7 @@
    "ok": true,
    "seen": 91,
    "hk": 6,
-   "secs": 0.0
+   "secs": 0.1
   },
   {
    "company": "Knight Frank",
@@ -316,63 +324,63 @@
    "ok": true,
    "seen": 41,
    "hk": 0,
-   "secs": 2.2
+   "secs": 2.6
   },
   {
    "company": "Lazard",
    "type": "oracle",
    "ok": true,
-   "seen": 92,
+   "seen": 94,
    "hk": 0,
-   "secs": 2.5
+   "secs": 3.2
   },
   {
    "company": "Lazard",
    "type": "oracle",
    "ok": true,
-   "seen": 92,
+   "seen": 94,
    "hk": 0,
-   "secs": 2.4
+   "secs": 2.9
   },
   {
    "company": "Lloyds Banking Group",
    "type": "workday",
    "ok": true,
-   "seen": 55,
+   "seen": 61,
    "hk": 0,
-   "secs": 5.4
+   "secs": 7.1
   },
   {
    "company": "Lombard Odier (HK)",
    "type": "workday",
    "ok": true,
-   "seen": 64,
+   "seen": 63,
    "hk": 0,
-   "secs": 5.3
+   "secs": 9.0
   },
   {
    "company": "MUFG Bank",
    "type": "workday",
    "ok": true,
-   "seen": 242,
+   "seen": 241,
    "hk": 3,
-   "secs": 15.6
+   "secs": 15.3
   },
   {
    "company": "Man Group",
    "type": "greenhouse",
    "ok": true,
-   "seen": 71,
+   "seen": 70,
    "hk": 0,
-   "secs": 0.2
+   "secs": 0.1
   },
   {
    "company": "Manulife (HK)",
    "type": "workday",
    "ok": true,
-   "seen": 293,
+   "seen": 295,
    "hk": 1,
-   "secs": 22.3
+   "secs": 21.7
   },
   {
    "company": "Moelis & Company",
@@ -380,7 +388,7 @@
    "ok": true,
    "seen": 16,
    "hk": 0,
-   "secs": 1.9
+   "secs": 4.0
   },
   {
    "company": "Morgan Stanley",
@@ -388,7 +396,7 @@
    "ok": true,
    "seen": 4,
    "hk": 0,
-   "secs": 1.0
+   "secs": 0.7
   },
   {
    "company": "Nan Fung Group",
@@ -396,7 +404,7 @@
    "ok": true,
    "seen": 3,
    "hk": 0,
-   "secs": 4.6
+   "secs": 3.0
   },
   {
    "company": "Nomura",
@@ -404,7 +412,7 @@
    "ok": true,
    "seen": 23,
    "hk": 0,
-   "secs": 0.5
+   "secs": 0.7
   },
   {
    "company": "Nvidia",
@@ -412,15 +420,15 @@
    "ok": true,
    "seen": 8,
    "hk": 0,
-   "secs": 1.0
+   "secs": 0.6
   },
   {
    "company": "OCBC Wing Hang",
    "type": "workday",
    "ok": true,
-   "seen": 420,
+   "seen": 421,
    "hk": 1,
-   "secs": 13.3
+   "secs": 13.9
   },
   {
    "company": "Optiver",
@@ -428,7 +436,7 @@
    "ok": true,
    "seen": 151,
    "hk": 0,
-   "secs": 0.0
+   "secs": 0.1
   },
   {
    "company": "P&G",
@@ -436,21 +444,13 @@
    "ok": true,
    "seen": 0,
    "hk": 0,
-   "secs": 1.4
-  },
-  {
-   "company": "PIMCO",
-   "type": "workday",
-   "ok": true,
-   "seen": 145,
-   "hk": 3,
-   "secs": 10.5
+   "secs": 1.5
   },
   {
    "company": "Point72",
    "type": "greenhouse",
    "ok": true,
-   "seen": 196,
+   "seen": 201,
    "hk": 7,
    "secs": 0.1
   },
@@ -460,7 +460,7 @@
    "ok": true,
    "seen": 243,
    "hk": 4,
-   "secs": 17.7
+   "secs": 18.8
   },
   {
    "company": "RBC",
@@ -468,7 +468,7 @@
    "ok": true,
    "seen": 0,
    "hk": 0,
-   "secs": 3.1
+   "secs": 4.3
   },
   {
    "company": "S&P Global",
@@ -476,7 +476,7 @@
    "ok": true,
    "seen": 201,
    "hk": 0,
-   "secs": 9.9
+   "secs": 11.1
   },
   {
    "company": "Santander",
@@ -490,17 +490,17 @@
    "company": "Schonfeld Strategic Advisors",
    "type": "greenhouse",
    "ok": true,
-   "seen": 66,
-   "hk": 5,
+   "seen": 70,
+   "hk": 7,
    "secs": 0.1
   },
   {
    "company": "Schroders",
    "type": "oracle",
    "ok": true,
-   "seen": 56,
+   "seen": 58,
    "hk": 0,
-   "secs": 1.9
+   "secs": 2.8
   },
   {
    "company": "Squarepoint Capital",
@@ -508,7 +508,7 @@
    "ok": true,
    "seen": 92,
    "hk": 3,
-   "secs": 0.0
+   "secs": 0.1
   },
   {
    "company": "State Street",
@@ -516,15 +516,15 @@
    "ok": true,
    "seen": 233,
    "hk": 0,
-   "secs": 9.3
+   "secs": 12.1
   },
   {
    "company": "Sun Life (HK)",
    "type": "workday",
    "ok": true,
-   "seen": 159,
-   "hk": 5,
-   "secs": 13.3
+   "seen": 165,
+   "hk": 6,
+   "secs": 15.5
   },
   {
    "company": "Swire",
@@ -532,23 +532,23 @@
    "ok": true,
    "seen": 4,
    "hk": 0,
-   "secs": 1.3
+   "secs": 1.0
   },
   {
    "company": "UOB",
    "type": "workday",
    "ok": true,
-   "seen": 220,
+   "seen": 221,
    "hk": 0,
-   "secs": 10.8
+   "secs": 10.7
   },
   {
    "company": "Vontobel",
    "type": "workday",
    "ok": true,
-   "seen": 49,
+   "seen": 50,
    "hk": 0,
-   "secs": 4.4
+   "secs": 5.0
   },
   {
    "company": "WeLab",
@@ -556,7 +556,7 @@
    "ok": true,
    "seen": 32,
    "hk": 1,
-   "secs": 0.3
+   "secs": 0.7
   },
   {
    "company": "Wellington Management",
@@ -564,13 +564,13 @@
    "ok": true,
    "seen": 5,
    "hk": 1,
-   "secs": 1.1
+   "secs": 1.2
   },
   {
    "company": "Wellington Management",
    "type": "workday",
    "ok": true,
-   "seen": 82,
+   "seen": 83,
    "hk": 1,
    "secs": 5.7
   }
@@ -2294,18 +2294,179 @@
    "updated": "2026-11-09",
    "job_list_url": "https://www.cityu.edu.hk/cc/portal/studentlan/2026.11.09%20Job%20List.xlsx",
    "intake": "Semester A & Winter Break 2026/27 Intake",
-   "confirmed_at": "2026-11-11T07:57:43Z",
+   "confirmed_at": "2026-11-11T19:37:07Z",
    "id": "cityu-itc-stem-internship-scheme",
    "name": "CityU ITC STEM Internship Scheme",
    "org": "City University of Hong Kong · College of Computing",
    "url": "https://www.cityu.edu.hk/cc/student-life-and-learning/internship-schemes/itc-stem-internship-scheme",
    "note": "Log in with your CityU EID to see the list of available internships.",
-   "checked_at": "2026-11-11T07:57:43Z",
+   "checked_at": "2026-11-11T19:37:07Z",
    "ok": true,
    "error": ""
   }
  ],
  "jobs": [
+  {
+   "title": "2027 Software Engineering Intern",
+   "location": "Hong Kong, Hong Kong",
+   "url": "https://job-boards.greenhouse.io/schonfeld/jobs/8346891",
+   "posted": "2026-11-11T11:22:21-05:00",
+   "ext_id": "8346891",
+   "kind": "internship",
+   "company_id": "schonfeld-strategic-advisors",
+   "company": "Schonfeld Strategic Advisors",
+   "source": "greenhouse",
+   "key": "schonfeld-strategic-advisors:8346891",
+   "src_key": "schonfeld-strategic-advisors#0",
+   "first_seen": "2026-11-11T19:37:07Z",
+   "last_seen": "2026-11-11T19:37:07Z",
+   "linkedin_url": "https://www.linkedin.com/jobs/view/4489982057/"
+  },
+  {
+   "title": "2027 Systematic COO Intern",
+   "location": "Hong Kong, Hong Kong",
+   "url": "https://job-boards.greenhouse.io/schonfeld/jobs/8244307",
+   "posted": "2026-11-11T11:20:18-05:00",
+   "ext_id": "8244307",
+   "kind": "internship",
+   "company_id": "schonfeld-strategic-advisors",
+   "company": "Schonfeld Strategic Advisors",
+   "source": "greenhouse",
+   "key": "schonfeld-strategic-advisors:8244307",
+   "src_key": "schonfeld-strategic-advisors#0",
+   "first_seen": "2026-11-11T19:37:07Z",
+   "last_seen": "2026-11-11T19:37:07Z",
+   "linkedin_url": "https://www.linkedin.com/jobs/view/4489978114/"
+  },
+  {
+   "title": "Finance Intern (Distribution Compensation Team)",
+   "location": "Hunghom, Kowloon, Hong Kong",
+   "url": "https://sunlife.wd3.myworkdayjobs.com/en-US/Experienced-Jobs/job/Hunghom-Kowloon-Hong-Kong/Finance-Intern--Distribution-Compensation-Team-_JR00129434-1",
+   "posted": "2026-11-11",
+   "ext_id": "/job/Hunghom-Kowloon-Hong-Kong/Finance-Intern--Distribution-Compensation-Team-_JR00129434-1",
+   "kind": "internship",
+   "company_id": "sun-life-hk",
+   "company": "Sun Life (HK)",
+   "source": "workday",
+   "key": "sun-life-hk:/job/Hunghom-Kowloon-Hong-Kong/Finance-Intern--Distribution-Compensation-Team-_JR00129434-1",
+   "src_key": "sun-life-hk#0",
+   "first_seen": "2026-11-11T19:37:07Z",
+   "last_seen": "2026-11-11T19:37:07Z",
+   "linkedin_url": "https://www.linkedin.com/jobs/view/4488684771/"
+  },
+  {
+   "title": "Growth Strategist Intern",
+   "company": "Aspire",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4487898681/",
+   "posted": "2026-11-11",
+   "ext_id": "4487898681",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4487898681",
+   "first_seen": "2026-11-11T19:37:07Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Data & Analytics – Intern",
+   "company": "Grand Alliance Asset Management Limited",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4488687014/",
+   "posted": "2026-11-11",
+   "ext_id": "4488687014",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4488687014",
+   "first_seen": "2026-11-11T19:37:07Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Talent Management Intern",
+   "company": "Warner Music Group",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4488683000/",
+   "posted": "2026-11-11",
+   "ext_id": "4488683000",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4488683000",
+   "first_seen": "2026-11-11T19:37:07Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Content & Curriculum Intern",
+   "company": "REAPRA PTE. LTD.",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4488101997/",
+   "posted": "2026-11-06",
+   "ext_id": "4488101997",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4488101997",
+   "first_seen": "2026-11-11T19:37:07Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "e-Commerce Clerk / Officer / Trainee (Kids' Clothing Online Retail Business)",
+   "company": "Worldmart International",
+   "location": "Kwai Chung, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4489035136/",
+   "posted": "2026-11-11",
+   "ext_id": "4489035136",
+   "kind": "graduate",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4489035136",
+   "first_seen": "2026-11-11T19:37:07Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Wealth Management Trainee 2026 (Local/ IANG Graduate Program)",
+   "company": "AIA Hong Kong and Macau",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4488674618/",
+   "posted": "2026-11-11",
+   "ext_id": "4488674618",
+   "kind": "graduate",
+   "company_id": "aia-group",
+   "source": "linkedin",
+   "key": "li:4488674618",
+   "first_seen": "2026-11-11T19:37:07Z",
+   "last_seen": "2026-11-11T19:37:07Z",
+   "checked": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Marketing Officer (Beauty, Contact Lens, Wine) - Welcome Fresh Graduates",
+   "company": "Hong Kong Technology Venture Career",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4488692051/",
+   "posted": "2026-11-11",
+   "ext_id": "4488692051",
+   "kind": "graduate",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4488692051",
+   "first_seen": "2026-11-11T19:37:07Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "2027 Hong Kong Graduate Program – HR & People Consulting – Hong Kong",
+   "company": "EY",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4488682075/",
+   "posted": "2026-11-11",
+   "ext_id": "4488682075",
+   "kind": "graduate",
+   "company_id": "ey",
+   "source": "linkedin",
+   "key": "li:4488682075",
+   "first_seen": "2026-11-11T19:37:07Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
   {
    "title": "Internship Trainee (Hotel Operations)",
    "company": "Yulan Hospitality Group",
@@ -2318,21 +2479,7 @@
    "source": "linkedin",
    "key": "li:4488667647",
    "first_seen": "2026-11-11T07:57:43Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "中資券商宏觀策略分析師實習生",
-   "company": "Huafu Securities",
-   "location": "Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4488661796/",
-   "posted": "2026-11-11",
-   "ext_id": "4488661796",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4488661796",
-   "first_seen": "2026-11-11T07:57:43Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "IT Production Engineering Graduate Programme (Jan Start Date)",
@@ -2346,7 +2493,7 @@
    "source": "linkedin",
    "key": "li:4487675867",
    "first_seen": "2026-11-11T07:57:43Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Software Engineering Graduate Programme (Jan Start Date)",
@@ -2360,7 +2507,7 @@
    "source": "linkedin",
    "key": "li:4487690057",
    "first_seen": "2026-11-11T07:57:43Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Sales Trainee (m/f/d) – Financial Indexes & Investments",
@@ -2373,6 +2520,244 @@
    "company_id": null,
    "source": "linkedin",
    "key": "li:4488383641",
+   "first_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Trainee, Energy & Infrastructure (One Year Contract)",
+   "company": "Crédit Agricole CIB",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4467166144/",
+   "posted": "2026-11-11",
+   "ext_id": "4467166144",
+   "kind": "graduate",
+   "company_id": "credit-agricole-cib",
+   "source": "linkedin",
+   "key": "li:4467166144",
+   "first_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Volunteer: 2027 Summer Program Student Teacher",
+   "company": "Time Auction",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4487694688/",
+   "posted": "2026-11-09",
+   "ext_id": "4487694688",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4487694688",
+   "first_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Graduate Sales Development Representative",
+   "company": "Canonical",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4489478286/",
+   "posted": "2026-11-10",
+   "ext_id": "4489478286",
+   "kind": "graduate",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4489478286",
+   "first_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Graduate Trainee - Front Office / Guest Experience",
+   "company": "Marriott International",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4345017808/",
+   "posted": "2026-11-05",
+   "ext_id": "4345017808",
+   "kind": "graduate",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4345017808",
+   "first_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Join a Fortune 500 Company: IT Sales Recruitment Consultant (Trainee to Consultant) - European HQ - Competitive Base Salary + Uncapped Commission",
+   "company": "Adecco",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4486744979/",
+   "posted": "2026-11-05",
+   "ext_id": "4486744979",
+   "kind": "graduate",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4486744979",
+   "first_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Graduate Engineer (Class of 2027)",
+   "company": "EcoCeres",
+   "location": "Kowloon, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4461326003/",
+   "posted": "2026-11-10",
+   "ext_id": "4461326003",
+   "kind": "graduate",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4461326003",
+   "first_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Analog Design Engineer (Power Management) (New Grad)",
+   "company": "Monolithic Power Systems",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4454374219/",
+   "posted": "2026-11-09",
+   "ext_id": "4454374219",
+   "kind": "graduate",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4454374219",
+   "first_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Recruitment Consultant - Mass Recruitment (Fresh Grad Welcome)",
+   "company": "Recruit Express Hong Kong",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4486545958/",
+   "posted": "2026-11-05",
+   "ext_id": "4486545958",
+   "kind": "graduate",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4486545958",
+   "first_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Graduate Private Equity Analyst",
+   "company": "CityGrad",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4488869488/",
+   "posted": "2026-11-09",
+   "ext_id": "4488869488",
+   "kind": "graduate",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4488869488",
+   "first_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "2027 MI Data Research & AI Intern",
+   "company": "Point72",
+   "location": "Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4488401367/",
+   "posted": "2026-11-06",
+   "ext_id": "4488401367",
+   "kind": "internship",
+   "company_id": "point72",
+   "source": "linkedin",
+   "key": "li:4488401367",
+   "first_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Graduate Rail Engineer (Civil) (2026 Intake)",
+   "company": "Arup",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4408760741/",
+   "posted": "2026-11-08",
+   "ext_id": "4408760741",
+   "kind": "graduate",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4408760741",
+   "first_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Graduate Structural Engineer (2026 Intake)",
+   "company": "Arup",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4408765755/",
+   "posted": "2026-11-08",
+   "ext_id": "4408765755",
+   "kind": "graduate",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4408765755",
+   "first_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "[Fresh Grad welcomed] Client Administration Officer",
+   "company": "Hays",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4487683336/",
+   "posted": "2026-11-09",
+   "ext_id": "4487683336",
+   "kind": "graduate",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4487683336",
+   "first_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Analog Design Engineer(Precision Analog)(New Grad)",
+   "company": "Monolithic Power Systems",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4454359889/",
+   "posted": "2026-11-07",
+   "ext_id": "4454359889",
+   "kind": "graduate",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4454359889",
+   "first_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Sales Trainee",
+   "company": "Medtronic",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4488137390/",
+   "posted": "2026-11-06",
+   "ext_id": "4488137390",
+   "kind": "graduate",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4488137390",
+   "first_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Business Development Executive (Fresh Graduate)",
+   "company": "ShopBack",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4337830781/",
+   "posted": "2026-11-05",
+   "ext_id": "4337830781",
+   "kind": "graduate",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4337830781",
+   "first_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "中資券商宏觀策略分析師實習生",
+   "company": "Huafu Securities",
+   "location": "Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4488661796/",
+   "posted": "2026-11-11",
+   "ext_id": "4488661796",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4488661796",
    "first_seen": "2026-11-11T07:57:43Z",
    "last_seen": "2026-11-11T07:57:43Z"
   },
@@ -2406,62 +2791,6 @@
    "last_seen": "2026-11-11T07:57:43Z"
   },
   {
-   "title": "Trainee, Energy & Infrastructure (One Year Contract)",
-   "company": "Crédit Agricole CIB",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4467166144/",
-   "posted": "2026-11-11",
-   "ext_id": "4467166144",
-   "kind": "graduate",
-   "company_id": "credit-agricole-cib",
-   "source": "linkedin",
-   "key": "li:4467166144",
-   "first_seen": "2026-11-11T07:57:43Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Volunteer: 2027 Summer Program Student Teacher",
-   "company": "Time Auction",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4487694688/",
-   "posted": "2026-11-09",
-   "ext_id": "4487694688",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4487694688",
-   "first_seen": "2026-11-11T07:57:43Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Graduate Sales Development Representative",
-   "company": "Canonical",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4489478286/",
-   "posted": "2026-11-10",
-   "ext_id": "4489478286",
-   "kind": "graduate",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4489478286",
-   "first_seen": "2026-11-11T07:57:43Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Graduate Trainee - Front Office / Guest Experience",
-   "company": "Marriott International",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4345017808/",
-   "posted": "2026-11-05",
-   "ext_id": "4345017808",
-   "kind": "graduate",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4345017808",
-   "first_seen": "2026-11-11T07:57:43Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
    "title": "Graduate Trainee - Front Office",
    "company": "The Ritz-Carlton Hotel Company, L.L.C.",
    "location": "Hong Kong, Hong Kong SAR",
@@ -2472,174 +2801,6 @@
    "company_id": null,
    "source": "linkedin",
    "key": "li:4358724351",
-   "first_seen": "2026-11-11T07:57:43Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Join a Fortune 500 Company: IT Sales Recruitment Consultant (Trainee to Consultant) - European HQ - Competitive Base Salary + Uncapped Commission",
-   "company": "Adecco",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4486744979/",
-   "posted": "2026-11-05",
-   "ext_id": "4486744979",
-   "kind": "graduate",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4486744979",
-   "first_seen": "2026-11-11T07:57:43Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Graduate Engineer (Class of 2027)",
-   "company": "EcoCeres",
-   "location": "Kowloon, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4461326003/",
-   "posted": "2026-11-10",
-   "ext_id": "4461326003",
-   "kind": "graduate",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4461326003",
-   "first_seen": "2026-11-11T07:57:43Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Analog Design Engineer (Power Management) (New Grad)",
-   "company": "Monolithic Power Systems",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4454374219/",
-   "posted": "2026-11-09",
-   "ext_id": "4454374219",
-   "kind": "graduate",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4454374219",
-   "first_seen": "2026-11-11T07:57:43Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Recruitment Consultant - Mass Recruitment (Fresh Grad Welcome)",
-   "company": "Recruit Express Hong Kong",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4486545958/",
-   "posted": "2026-11-05",
-   "ext_id": "4486545958",
-   "kind": "graduate",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4486545958",
-   "first_seen": "2026-11-11T07:57:43Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Graduate Private Equity Analyst",
-   "company": "CityGrad",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4488869488/",
-   "posted": "2026-11-09",
-   "ext_id": "4488869488",
-   "kind": "graduate",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4488869488",
-   "first_seen": "2026-11-11T07:57:43Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "2027 MI Data Research & AI Intern",
-   "company": "Point72",
-   "location": "Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4488401367/",
-   "posted": "2026-11-06",
-   "ext_id": "4488401367",
-   "kind": "internship",
-   "company_id": "point72",
-   "source": "linkedin",
-   "key": "li:4488401367",
-   "first_seen": "2026-11-11T07:57:43Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Graduate Rail Engineer (Civil) (2026 Intake)",
-   "company": "Arup",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4408760741/",
-   "posted": "2026-11-08",
-   "ext_id": "4408760741",
-   "kind": "graduate",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4408760741",
-   "first_seen": "2026-11-11T07:57:43Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Graduate Structural Engineer (2026 Intake)",
-   "company": "Arup",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4408765755/",
-   "posted": "2026-11-08",
-   "ext_id": "4408765755",
-   "kind": "graduate",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4408765755",
-   "first_seen": "2026-11-11T07:57:43Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "[Fresh Grad welcomed] Client Administration Officer",
-   "company": "Hays",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4487683336/",
-   "posted": "2026-11-09",
-   "ext_id": "4487683336",
-   "kind": "graduate",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4487683336",
-   "first_seen": "2026-11-11T07:57:43Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Analog Design Engineer(Precision Analog)(New Grad)",
-   "company": "Monolithic Power Systems",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4454359889/",
-   "posted": "2026-11-07",
-   "ext_id": "4454359889",
-   "kind": "graduate",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4454359889",
-   "first_seen": "2026-11-11T07:57:43Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Sales Trainee",
-   "company": "Medtronic",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4488137390/",
-   "posted": "2026-11-06",
-   "ext_id": "4488137390",
-   "kind": "graduate",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4488137390",
-   "first_seen": "2026-11-11T07:57:43Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Business Development Executive (Fresh Graduate)",
-   "company": "ShopBack",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4337830781/",
-   "posted": "2026-11-05",
-   "ext_id": "4337830781",
-   "kind": "graduate",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4337830781",
    "first_seen": "2026-11-11T07:57:43Z",
    "last_seen": "2026-11-11T07:57:43Z"
   },
@@ -2656,7 +2817,7 @@
    "key": "citigroup:859037415015",
    "src_key": "citigroup#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Wealth - Citigold, Summer Analyst, Hong Kong, 2027",
@@ -2671,7 +2832,7 @@
    "key": "citigroup:859037415503",
    "src_key": "citigroup#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Banking - Commercial Banking, Summer Analyst, Hong Kong – APAC, 2027",
@@ -2686,7 +2847,7 @@
    "key": "citigroup:859037181484",
    "src_key": "citigroup#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "2027 Markets Quantitative Trading & Research Associate Program – Off-Cycle Internship - Hong Kong",
@@ -2701,7 +2862,7 @@
    "key": "jpmorgan-chase:210784369",
    "src_key": "jpmorgan-chase#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "2027 Markets Quantitative Trading & Research Analyst Program – Off-Cycle Internship - Hong Kong",
@@ -2716,7 +2877,7 @@
    "key": "jpmorgan-chase:210784371",
    "src_key": "jpmorgan-chase#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Electronic Trading Associate Summer Internship Programme 2027 Hong Kong",
@@ -2731,7 +2892,7 @@
    "key": "barclays:/job/Hong-Kong-Cheung-Kong-Center/Electronic-Trading-Associate-Summer-Internship-Programme-2027-Hong-Kong_JR-0000117566",
    "src_key": "barclays#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Quantitative Analytics Associate Off Cycle Internship 2027 Hong Kong",
@@ -2746,7 +2907,7 @@
    "key": "barclays:/job/Hong-Kong-Cheung-Kong-Center/Quantitative-Analytics-Associate-Off-Cycle-Internship-2027-Hong-Kong_JR-0000117565",
    "src_key": "barclays#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Sales, Trading and Structuring Graduate Programme 2027 Hong Kong",
@@ -2761,7 +2922,7 @@
    "key": "barclays:/job/Hong-Kong-Cheung-Kong-Center/Sales--Trading-and-Structuring-Graduate-Programme-2027-Hong-Kong_JR-0000128133",
    "src_key": "barclays#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "MUFG Analyst Programme 2027 – Corporate Functions",
@@ -2776,7 +2937,7 @@
    "key": "mufg-bank:/job/Hong-Kong---Airside/MUFG-Analyst-Programme-2027---Corporate-Functions_10079443-WD-1",
    "src_key": "mufg-bank#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "MUFG Analyst Programme 2027 – Global Operations",
@@ -2791,7 +2952,7 @@
    "key": "mufg-bank:/job/Hong-Kong---Airside/MUFG-Analyst-Programme-2027---Global-Operations_10079445-WD-2",
    "src_key": "mufg-bank#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "MUFG Analyst Programme 2027 – Global Corporate Banking",
@@ -2806,7 +2967,7 @@
    "key": "mufg-bank:/job/Hong-Kong---Airside/MUFG-Analyst-Programme-2027---Global-Corporate-Banking_10079444-WD-1",
    "src_key": "mufg-bank#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Settlement Officer (Fresh Graduate are also welcome)",
@@ -2821,7 +2982,7 @@
    "key": "bank-of-china-hk:https://careers.pageuppeople.com/798/cw/en/job/500198",
    "src_key": "bank-of-china-hk#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Customer Due Diligence Officer (Fresh Graduate are welcome)",
@@ -2836,7 +2997,7 @@
    "key": "bank-of-china-hk:https://careers.pageuppeople.com/798/cw/en/job/498460",
    "src_key": "bank-of-china-hk#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "2027 Southeast Asia Trainee Programme",
@@ -2851,7 +3012,7 @@
    "key": "bank-of-china-hk:https://careers.pageuppeople.com/798/cw/en/job/500112",
    "src_key": "bank-of-china-hk#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Wealth Management Trainee Programme",
@@ -2866,7 +3027,7 @@
    "key": "bank-of-china-hk:https://careers.pageuppeople.com/798/cw/en/job/500074",
    "src_key": "bank-of-china-hk#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z",
    "linkedin_url": "https://www.linkedin.com/jobs/view/4443228073/"
   },
   {
@@ -2882,7 +3043,7 @@
    "key": "bank-of-china-hk:https://careers.pageuppeople.com/798/cw/en/job/498968",
    "src_key": "bank-of-china-hk#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Business Compliance - Assistant Manager / Manager (Fresh Graduates are Welcome)",
@@ -2897,7 +3058,7 @@
    "key": "ocbc-wing-hang:/job/OCBC-Hong-Kong/Business-Compliance---Assistant-Manager---Manager--Fresh-Graduates-are-Welcome-_JR00009937-1",
    "src_key": "ocbc-wing-hang#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Equity Research MBA Intern Programme 2027 - Hong Kong",
@@ -2912,7 +3073,7 @@
    "key": "fidelity-international:1441",
    "src_key": "fidelity-international#1",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "General Counsel Graduate Programme 2027 - Hong Kong",
@@ -2927,7 +3088,7 @@
    "key": "fidelity-international:1417",
    "src_key": "fidelity-international#1",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Business Off-Cycle Internship Programme 2027 - Hong Kong",
@@ -2942,7 +3103,7 @@
    "key": "fidelity-international:1418",
    "src_key": "fidelity-international#1",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Fixed Income Off-Cycle Internship Programme 2027 - Hong Kong",
@@ -2957,7 +3118,7 @@
    "key": "fidelity-international:1396",
    "src_key": "fidelity-international#1",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "2027 APAC Legal Off Cycle Internship - 6 Months",
@@ -2972,7 +3133,7 @@
    "key": "wellington-management:/job/Central-Hong-Kong-Hong-Kong/XMLNAME-2027-APAC-Legal-Off-Cycle-Internship---6-Months_R95000",
    "src_key": "wellington-management#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "2027 Summer Internship – Account Analyst, APAC",
@@ -3033,7 +3194,7 @@
    "key": "point72:8899753002",
    "src_key": "point72#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "2027 Trader Summer Intern (12-week program)",
@@ -3048,7 +3209,7 @@
    "key": "point72:8932943002",
    "src_key": "point72#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z",
    "linkedin_url": "https://www.linkedin.com/jobs/view/4488194369/"
   },
   {
@@ -3064,7 +3225,7 @@
    "key": "point72:8878966002",
    "src_key": "point72#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Long/Short Equity Support Research Intern, Hong Kong",
@@ -3079,7 +3240,7 @@
    "key": "point72:8899750002",
    "src_key": "point72#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Point72 Academy 2026 Investment Analyst Program for Experienced Professionals – Hong Kong",
@@ -3094,7 +3255,7 @@
    "key": "point72:8538913002",
    "src_key": "point72#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Point72 Academy Investment Analyst Program for Experienced Professionals — Greater China",
@@ -3109,7 +3270,7 @@
    "key": "point72:8875470002",
    "src_key": "point72#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Quantitative Researcher - Intern",
@@ -3124,7 +3285,7 @@
    "key": "point72:7297657002",
    "src_key": "point72#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "2027 AI Forward Deployed Engineer Intern",
@@ -3139,7 +3300,7 @@
    "key": "schonfeld-strategic-advisors:8311595",
    "src_key": "schonfeld-strategic-advisors#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "2027 Emerging Markets and Delta One Quantitative Researcher/Strat Intern",
@@ -3154,7 +3315,7 @@
    "key": "schonfeld-strategic-advisors:8350719",
    "src_key": "schonfeld-strategic-advisors#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "2027 Index Rebalancing Quantitative Research Intern",
@@ -3169,7 +3330,7 @@
    "key": "schonfeld-strategic-advisors:8311597",
    "src_key": "schonfeld-strategic-advisors#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "2027 Quantitative C++ Developer Intern",
@@ -3184,7 +3345,7 @@
    "key": "schonfeld-strategic-advisors:8238451",
    "src_key": "schonfeld-strategic-advisors#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "2027 Quantitative Research Intern",
@@ -3199,7 +3360,7 @@
    "key": "schonfeld-strategic-advisors:8238448",
    "src_key": "schonfeld-strategic-advisors#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Graduate Trading Applications Specialist",
@@ -3214,7 +3375,7 @@
    "key": "squarepoint-capital:6100081",
    "src_key": "squarepoint-capital#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Intern Quant Researcher",
@@ -3229,7 +3390,7 @@
    "key": "squarepoint-capital:243853",
    "src_key": "squarepoint-capital#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Trading Infrastructure Specialist – Graduate Program",
@@ -3244,7 +3405,7 @@
    "key": "squarepoint-capital:7757021",
    "src_key": "squarepoint-capital#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Cybersecurity Engineer (Full-Time: New Grad)",
@@ -3259,7 +3420,7 @@
    "key": "jane-street:8842129002",
    "src_key": "jane-street#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Cybersecurity Engineer (Summer Internship)",
@@ -3274,7 +3435,7 @@
    "key": "jane-street:8810604002",
    "src_key": "jane-street#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "IT Operations Engineer (Summer Internship)",
@@ -3289,7 +3450,7 @@
    "key": "jane-street:8641377002",
    "src_key": "jane-street#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Linux Engineer (Full-Time: New Grad)",
@@ -3304,7 +3465,7 @@
    "key": "jane-street:8643171002",
    "src_key": "jane-street#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Linux Engineer (Summer Internship)",
@@ -3319,7 +3480,7 @@
    "key": "jane-street:8625946002",
    "src_key": "jane-street#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Machine Learning Researcher (Summer Internship)",
@@ -3334,7 +3495,7 @@
    "key": "jane-street:8596771002",
    "src_key": "jane-street#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Machine Learning Researcher (Full-Time: New Grad)",
@@ -3349,7 +3510,7 @@
    "key": "jane-street:8576934002",
    "src_key": "jane-street#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Quantitative Researcher (Summer Internship)",
@@ -3364,7 +3525,7 @@
    "key": "jane-street:8623868002",
    "src_key": "jane-street#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Quantitative Researcher (Full-Time: New Grad)",
@@ -3379,7 +3540,7 @@
    "key": "jane-street:8754684002",
    "src_key": "jane-street#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Quantitative Trader (Full-Time: New Grad)",
@@ -3394,7 +3555,7 @@
    "key": "jane-street:8415898002",
    "src_key": "jane-street#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Quantitative Trader (Summer Internship)",
@@ -3409,7 +3570,7 @@
    "key": "jane-street:8623733002",
    "src_key": "jane-street#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Sales and Trading (Summer Internship)",
@@ -3424,7 +3585,7 @@
    "key": "jane-street:8630687002",
    "src_key": "jane-street#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Software Engineer (Summer Internship)",
@@ -3439,7 +3600,7 @@
    "key": "jane-street:8617298002",
    "src_key": "jane-street#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Software Engineer (Full-Time: New Grad)",
@@ -3454,7 +3615,7 @@
    "key": "jane-street:8637960002",
    "src_key": "jane-street#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Strategy and Product (Summer Internship)",
@@ -3469,7 +3630,7 @@
    "key": "jane-street:8630713002",
    "src_key": "jane-street#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Trading Desk Operations Engineer (Summer Internship)",
@@ -3484,7 +3645,7 @@
    "key": "jane-street:8620505002",
    "src_key": "jane-street#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Trading Desk Operations Engineer (Full-Time: New Grad)",
@@ -3499,7 +3660,7 @@
    "key": "jane-street:8759009002",
    "src_key": "jane-street#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Quantitative Research Intern 2027",
@@ -3514,7 +3675,7 @@
    "key": "imc-trading:4941208101",
    "src_key": "imc-trading#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z",
    "linkedin_url": "https://www.linkedin.com/jobs/view/4452913205/"
   },
   {
@@ -3530,7 +3691,7 @@
    "key": "imc-trading:4941205101",
    "src_key": "imc-trading#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z",
    "linkedin_url": "https://www.linkedin.com/jobs/view/4452930184/"
   },
   {
@@ -3546,7 +3707,7 @@
    "key": "imc-trading:4941206101",
    "src_key": "imc-trading#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z",
    "linkedin_url": "https://www.linkedin.com/jobs/view/4452930185/"
   },
   {
@@ -3562,7 +3723,7 @@
    "key": "jump-trading:8027938",
    "src_key": "jump-trading#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Campus C++ Software Engineer (Intern)",
@@ -3577,7 +3738,7 @@
    "key": "jump-trading:8027860",
    "src_key": "jump-trading#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Campus Python Software Engineer (Intern)",
@@ -3592,7 +3753,7 @@
    "key": "jump-trading:8027923",
    "src_key": "jump-trading#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Campus Quantitative Researcher (Intern)",
@@ -3607,7 +3768,7 @@
    "key": "jump-trading:8027900",
    "src_key": "jump-trading#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Campus Quantitative Researcher (Off-Cycle - Winter/Spring 2027 Intern)",
@@ -3622,7 +3783,7 @@
    "key": "jump-trading:8027898",
    "src_key": "jump-trading#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Campus Quantitative Trader (Intern)",
@@ -3637,7 +3798,7 @@
    "key": "jump-trading:8027922",
    "src_key": "jump-trading#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "PhD Graduate Quantitative Researcher",
@@ -3652,7 +3813,7 @@
    "key": "flow-traders:8213037",
    "src_key": "flow-traders#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Trading Intern",
@@ -3667,7 +3828,7 @@
    "key": "flow-traders:8102618",
    "src_key": "flow-traders#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z",
    "linkedin_url": "https://www.linkedin.com/jobs/view/4446611326/"
   },
   {
@@ -3683,13 +3844,13 @@
    "key": "aia-group:/job/Hong-Kong-HK-AIA-Hong-Kong--Macau/Agency--Intern_JR-68279-1",
    "src_key": "aia-group#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Finance, Intern",
    "location": "Hong Kong, HK-AIA Hong Kong & Macau",
    "url": "https://aia.wd3.myworkdayjobs.com/en-US/External/job/Hong-Kong-HK-AIA-Hong-Kong--Macau/Finance--Intern_JR-71931",
-   "posted": "2026-11-11",
+   "posted": "2026-11-10",
    "ext_id": "/job/Hong-Kong-HK-AIA-Hong-Kong--Macau/Finance--Intern_JR-71931",
    "kind": "internship",
    "company_id": "aia-group",
@@ -3698,7 +3859,7 @@
    "key": "aia-group:/job/Hong-Kong-HK-AIA-Hong-Kong--Macau/Finance--Intern_JR-71931",
    "src_key": "aia-group#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z",
    "linkedin_url": "https://www.linkedin.com/jobs/view/4487467598/"
   },
   {
@@ -3714,7 +3875,7 @@
    "key": "aia-group:/job/Hong-Kong-HK-AIA-Hong-Kong--Macau/Product-Pricing--Intern_JR-58470",
    "src_key": "aia-group#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "2027 Actuarial Intern",
@@ -3729,7 +3890,7 @@
    "key": "aia-group:/job/Hong-Kong-HK-AIA-Hong-Kong--Macau/XMLNAME-2026-Actuarial-Intern_JR-60566",
    "src_key": "aia-group#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z",
    "linkedin_url": "https://www.linkedin.com/jobs/view/4291776895/"
   },
   {
@@ -3745,7 +3906,7 @@
    "key": "aia-group:/job/Hong-Kong-HK-AIA-Group-Office/Intern--Group-Legal_JR-66439",
    "src_key": "aia-group#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "2027 Actuarial Intern (General Insurance)",
@@ -3760,7 +3921,7 @@
    "key": "aia-group:/job/Hong-Kong-HK-AIA-Blue-Cross/XMLNAME-2026-Actuarial-Intern--General-Insurance-_JR-61783",
    "src_key": "aia-group#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "AIA Actuarial Internship Programme",
@@ -3775,7 +3936,7 @@
    "key": "aia-group:/job/Hong-Kong-HK-AIA-Hong-Kong--Macau/XMLNAME-2022-2023-AIA-Actuarial-Internship-Programme_JR-15033",
    "src_key": "aia-group#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "2027 1H Actuarial Internship Programme, AIA Group Office",
@@ -3790,13 +3951,13 @@
    "key": "aia-group:/job/Hong-Kong-HK-AIA-Group-Office/XMLNAME-2026-2H-Actuarial-Internship-Programme--AIA-Group-Office_JR-61517",
    "src_key": "aia-group#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "2027 2H Actuarial Internship Programme, AIA Group Office",
    "location": "Hong Kong, HK-AIA Group Office",
    "url": "https://aia.wd3.myworkdayjobs.com/en-US/External/job/Hong-Kong-HK-AIA-Group-Office/XMLNAME-2027-2H-Actuarial-Internship-Programme--AIA-Group-Office_JR-71632",
-   "posted": "2026-10-28",
+   "posted": "2026-10-27",
    "ext_id": "/job/Hong-Kong-HK-AIA-Group-Office/XMLNAME-2027-2H-Actuarial-Internship-Programme--AIA-Group-Office_JR-71632",
    "kind": "internship",
    "company_id": "aia-group",
@@ -3805,7 +3966,7 @@
    "key": "aia-group:/job/Hong-Kong-HK-AIA-Group-Office/XMLNAME-2027-2H-Actuarial-Internship-Programme--AIA-Group-Office_JR-71632",
    "src_key": "aia-group#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Intern, HR",
@@ -3820,7 +3981,7 @@
    "key": "prudential-plc-hk:/job/Hong-Kong-Group-Head-Office/Intern--HR_26050218",
    "src_key": "prudential-plc-hk#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Actuarial Intern (July 2027 to Dec 2027)",
@@ -3835,13 +3996,13 @@
    "key": "prudential-plc-hk:/job/Hong-Kong/Actuarial-Intern--July-2027-to-Dec-2027-_26080466",
    "src_key": "prudential-plc-hk#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Intern, General Insurance (Jan 2027 to Jun 2027)",
    "location": "Hong Kong",
    "url": "https://prudential.wd3.myworkdayjobs.com/en-US/prudential/job/Hong-Kong/Intern--General-Insurance--Jan-2027-to-Jun-2027-_26100051",
-   "posted": "2026-10-12",
+   "posted": "30+ days ago",
    "ext_id": "/job/Hong-Kong/Intern--General-Insurance--Jan-2027-to-Jun-2027-_26100051",
    "kind": "internship",
    "company_id": "prudential-plc-hk",
@@ -3850,7 +4011,7 @@
    "key": "prudential-plc-hk:/job/Hong-Kong/Intern--General-Insurance--Jan-2027-to-Jun-2027-_26100051",
    "src_key": "prudential-plc-hk#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Part time Intern, GI (Sep 2026 to Dec 2026)",
@@ -3865,13 +4026,13 @@
    "key": "prudential-plc-hk:/job/Hong-Kong/Part-time-Intern--GI--Sep-2026-to-Dec-2026-_26080465",
    "src_key": "prudential-plc-hk#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Co-op Internship 2027 - Regional Marketing Strategy, UX/UI",
    "location": "Hong Kong, Manulife Tower; Hong Kong, Manulife Financial Centre",
    "url": "https://manulife.wd3.myworkdayjobs.com/en-US/MFCJH_Jobs/job/Hong-Kong-Manulife-Tower/Co-op-Internship-2027---Regional-Marketing-Strategy--UX-UI_JR26110506",
-   "posted": "2026-11-11",
+   "posted": "2026-11-10",
    "ext_id": "/job/Hong-Kong-Manulife-Tower/Co-op-Internship-2027---Regional-Marketing-Strategy--UX-UI_JR26110506",
    "kind": "internship",
    "company_id": "manulife-hk",
@@ -3880,14 +4041,14 @@
    "key": "manulife-hk:/job/Hong-Kong-Manulife-Tower/Co-op-Internship-2027---Regional-Marketing-Strategy--UX-UI_JR26110506",
    "src_key": "manulife-hk#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z",
    "linkedin_url": "https://www.linkedin.com/jobs/view/4488313609/"
   },
   {
    "title": "Finance Intern (Jan - Jun 2027)",
    "location": "Hunghom, Kowloon, Hong Kong",
    "url": "https://sunlife.wd3.myworkdayjobs.com/en-US/Experienced-Jobs/job/Hunghom-Kowloon-Hong-Kong/Finance-Intern--Jan---Jun-2027-_JR00128213",
-   "posted": "2026-11-03",
+   "posted": "2026-11-02",
    "ext_id": "/job/Hunghom-Kowloon-Hong-Kong/Finance-Intern--Jan---Jun-2027-_JR00128213",
    "kind": "internship",
    "company_id": "sun-life-hk",
@@ -3896,14 +4057,13 @@
    "key": "sun-life-hk:/job/Hunghom-Kowloon-Hong-Kong/Finance-Intern--Jan---Jun-2027-_JR00128213",
    "src_key": "sun-life-hk#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z",
-   "linkedin_url": "https://www.linkedin.com/jobs/view/4469420371/"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Risk Management Intern (Jul - Dec 2027 Placement)",
    "location": "Hunghom, Kowloon, Hong Kong",
    "url": "https://sunlife.wd3.myworkdayjobs.com/en-US/Experienced-Jobs/job/Hunghom-Kowloon-Hong-Kong/Risk-Management-Intern--Jul---Dec-2027-Placement-_JR00121344",
-   "posted": "2026-10-16",
+   "posted": "2026-10-15",
    "ext_id": "/job/Hunghom-Kowloon-Hong-Kong/Risk-Management-Intern--Jul---Dec-2027-Placement-_JR00121344",
    "kind": "internship",
    "company_id": "sun-life-hk",
@@ -3912,7 +4072,7 @@
    "key": "sun-life-hk:/job/Hunghom-Kowloon-Hong-Kong/Risk-Management-Intern--Jul---Dec-2027-Placement-_JR00121344",
    "src_key": "sun-life-hk#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z",
    "linkedin_url": "https://www.linkedin.com/jobs/view/4478837863/"
   },
   {
@@ -3928,7 +4088,7 @@
    "key": "sun-life-hk:/job/Hunghom-Kowloon-Hong-Kong/Actuarial-Internship-2027_JR00120885",
    "src_key": "sun-life-hk#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Hong Kong Actuarial Internship 2026",
@@ -3943,7 +4103,7 @@
    "key": "sun-life-hk:/job/Hunghom-Kowloon-Hong-Kong/Hong-Kong-Actuarial-Internship-2026_JR00108869",
    "src_key": "sun-life-hk#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "FLAME Management Trainee Program",
@@ -3958,7 +4118,7 @@
    "key": "sun-life-hk:/job/Hunghom-Kowloon-Hong-Kong/FLAME-Management-Trainee-Programme_JR00127977-1",
    "src_key": "sun-life-hk#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Tracks Trainee (Turf)",
@@ -3973,7 +4133,7 @@
    "key": "hkjc-jockey-club:https://careers.hkjc.com/job/Tracks-Trainee-%28Turf%29/1365840966/",
    "src_key": "hkjc-jockey-club#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z",
    "linkedin_url": "https://www.linkedin.com/jobs/view/4454382105/"
   },
   {
@@ -3989,7 +4149,7 @@
    "key": "welab:818",
    "src_key": "welab#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Insight Day",
@@ -4004,7 +4164,7 @@
    "key": "alphasights:8161035",
    "src_key": "alphasights#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Summer Internship Program, Client Service (2027 Start)",
@@ -4019,21 +4179,7 @@
    "key": "alphasights:8152244",
    "src_key": "alphasights#0",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Quantitative Trading Intern (DV QES)",
-   "company": "DV Trading LLC",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4414642006/",
-   "posted": "2026-11-04",
-   "ext_id": "4414642006",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4414642006",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Partnerships Intern (Korean Speaker)",
@@ -4047,7 +4193,7 @@
    "source": "linkedin",
    "key": "li:4477353732",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "2027 Corporate Access Intern",
@@ -4061,7 +4207,7 @@
    "source": "linkedin",
    "key": "li:4488196315",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z",
    "checked": "2026-11-11T06:57:35Z"
   },
   {
@@ -4076,7 +4222,7 @@
    "source": "linkedin",
    "key": "li:4434978754",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Quantitative Research Internship - PhD: Summer 2027",
@@ -4090,7 +4236,7 @@
    "source": "linkedin",
    "key": "li:4434956041",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Quant Strategy & AI Agent Intern",
@@ -4104,7 +4250,7 @@
    "source": "linkedin",
    "key": "li:4486582650",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "2027 Deutsche Bank Summer Internship Programme - Human Resources - Hong Kong",
@@ -4118,7 +4264,7 @@
    "source": "linkedin",
    "key": "li:4450487719",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z",
    "checked": "2026-11-11T06:57:35Z"
   },
   {
@@ -4133,7 +4279,7 @@
    "source": "linkedin",
    "key": "li:4487786246",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z",
    "checked": "2026-11-11T06:57:35Z"
   },
   {
@@ -4148,7 +4294,7 @@
    "source": "linkedin",
    "key": "li:4488302719",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Intern, Finance (Jan 2027 - Jul 2027)",
@@ -4162,7 +4308,7 @@
    "source": "linkedin",
    "key": "li:4478181993",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z",
    "checked": "2026-11-11T06:57:35Z"
   },
   {
@@ -4177,7 +4323,7 @@
    "source": "linkedin",
    "key": "li:4487733405",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z",
    "checked": "2026-11-11T06:57:35Z"
   },
   {
@@ -4192,7 +4338,7 @@
    "source": "linkedin",
    "key": "li:4475194733",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z",
+   "last_seen": "2026-11-11T19:37:07Z",
    "checked": "2026-11-11T06:57:35Z"
   },
   {
@@ -4207,7 +4353,7 @@
    "source": "linkedin",
    "key": "li:4488323196",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Commercial Intern (6-12 months)",
@@ -4221,7 +4367,7 @@
    "source": "linkedin",
    "key": "li:4469882150",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "Human Resources Intern (6-12 months)",
@@ -4235,7 +4381,7 @@
    "source": "linkedin",
    "key": "li:4470410965",
    "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
+   "last_seen": "2026-11-11T19:37:07Z"
   },
   {
    "title": "2027Business Development Internship",
@@ -4248,6 +4394,904 @@
    "company_id": null,
    "source": "linkedin",
    "key": "li:4433653928",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Business Development (Sales) Intern - APAC",
+   "company": "Oxford Economics",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4434827707/",
+   "posted": "2026-11-10",
+   "ext_id": "4434827707",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4434827707",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Associate Solutions Architect Intern, Hong Kong",
+   "company": "Amazon Web Services (AWS)",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4473230870/",
+   "posted": "2026-11-11",
+   "ext_id": "4473230870",
+   "kind": "internship",
+   "company_id": "amazon",
+   "source": "linkedin",
+   "key": "li:4473230870",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z",
+   "checked": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Hong Kong STEM Intern(Chinese speaker)",
+   "company": "BRIDGE AI GAMING LIMITED",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4487597290/",
+   "posted": "2026-11-05",
+   "ext_id": "4487597290",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4487597290",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Test Development Engineer Intern (User Service)",
+   "company": "Bybit",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4486769903/",
+   "posted": "2026-11-05",
+   "ext_id": "4486769903",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4486769903",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Big Data Development Engineer Intern (Realtime)",
+   "company": "Bybit",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4488303858/",
+   "posted": "2026-11-10",
+   "ext_id": "4488303858",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4488303858",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "商务经理实习生",
+   "company": "Baidu, Inc.",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4487696333/",
+   "posted": "2026-11-09",
+   "ext_id": "4487696333",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4487696333",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Actuarial Intern - Life Practice",
+   "company": "Milliman",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4412896619/",
+   "posted": "2026-11-06",
+   "ext_id": "4412896619",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4412896619",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "People & Culture Intern",
+   "company": "Mandarin Oriental",
+   "location": "Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4487727968/",
+   "posted": "2026-11-05",
+   "ext_id": "4487727968",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4487727968",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Marketing Intern",
+   "company": "China Asset Management (Hong Kong)",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4479790806/",
+   "posted": "2026-11-11",
+   "ext_id": "4479790806",
+   "kind": "internship",
+   "company_id": "china-asset-management-co",
+   "source": "linkedin",
+   "key": "li:4479790806",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z",
+   "checked": "2026-11-11T07:57:43Z"
+  },
+  {
+   "title": "2027Wealth Management Intern",
+   "company": "Hiwin Financial Consultant Company",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4473729860/",
+   "posted": "2026-11-09",
+   "ext_id": "4473729860",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4473729860",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Intern, Tax",
+   "company": "Under Armour",
+   "location": "Kowloon Bay, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4489426140/",
+   "posted": "2026-11-10",
+   "ext_id": "4489426140",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4489426140",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Intern, Japan ICG Sales (6-months, LoA)",
+   "company": "Apollo Global Management, Inc.",
+   "location": "Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4486570752/",
+   "posted": "2026-11-05",
+   "ext_id": "4486570752",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4486570752",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Global Markets - AMM - 6 Months Internship - Hong Kong",
+   "company": "Robert Walters",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4486932912/",
+   "posted": "2026-11-06",
+   "ext_id": "4486932912",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4486932912",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Digital Marketing Intern",
+   "company": "First Page",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4488811706/",
+   "posted": "2026-11-09",
+   "ext_id": "4488811706",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4488811706",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Intern - Visual Merchandising",
+   "company": "Louis Vuitton",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4489450997/",
+   "posted": "2026-11-10",
+   "ext_id": "4489450997",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4489450997",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Life Sciences Summer Internship Program (HK/Shenzhen/Shanghai)",
+   "company": "Hong Kong Life Sciences Society (HKLSS)",
+   "location": "Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4486573355/",
+   "posted": "2026-11-05",
+   "ext_id": "4486573355",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4486573355",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Human Resources Intern - Corporate Office",
+   "company": "Hyatt",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4488184717/",
+   "posted": "2026-11-06",
+   "ext_id": "4488184717",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4488184717",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "MBA Intern, 2027",
+   "company": "Google",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4478868517/",
+   "posted": "2026-11-06",
+   "ext_id": "4478868517",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4478868517",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Internship, Hong Kong",
+   "company": "The Hoffman Agency",
+   "location": "Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4340399343/",
+   "posted": "2026-11-08",
+   "ext_id": "4340399343",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4340399343",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Asset Management Intern",
+   "company": "TF International Securities",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4487977630/",
+   "posted": "2026-11-10",
+   "ext_id": "4487977630",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4487977630",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Internship - AI Engineer",
+   "company": "Infineon Technologies",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4480996815/",
+   "posted": "2026-11-10",
+   "ext_id": "4480996815",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4480996815",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Intern (Trend & Design) (Oct 26 - Jan 27) - HK",
+   "company": "Lidl & Kaufland Asia",
+   "location": "Kowloon, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4476266841/",
+   "posted": "2026-11-05",
+   "ext_id": "4476266841",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4476266841",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Marketing Intern",
+   "company": "Carousell Group",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4462231271/",
+   "posted": "2026-11-11",
+   "ext_id": "4462231271",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4462231271",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Compliance and KYC Intern",
+   "company": "Longbridge Singapore",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4479552805/",
+   "posted": "2026-11-05",
+   "ext_id": "4479552805",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4479552805",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Social Media Creative Intern",
+   "company": "Carousell Group",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4489417809/",
+   "posted": "2026-11-10",
+   "ext_id": "4489417809",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4489417809",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Intern, Business Continuity Management",
+   "company": "Allianz Global Investors",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4487761183/",
+   "posted": "2026-11-05",
+   "ext_id": "4487761183",
+   "kind": "internship",
+   "company_id": "allianz-global-investors",
+   "source": "linkedin",
+   "key": "li:4487761183",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z",
+   "checked": "2026-11-11T07:57:43Z"
+  },
+  {
+   "title": "Research Intern",
+   "company": "Microsoft",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4462188381/",
+   "posted": "2026-11-05",
+   "ext_id": "4462188381",
+   "kind": "internship",
+   "company_id": "microsoft",
+   "source": "linkedin",
+   "key": "li:4462188381",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z",
+   "checked": "2026-11-11T07:57:43Z"
+  },
+  {
+   "title": "Governance Intern (For MPPM Students from The Education University Hong Kong only)",
+   "company": "English Schools Foundation",
+   "location": "Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4477362311/",
+   "posted": "2026-11-06",
+   "ext_id": "4477362311",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4477362311",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Actuarial/ Insurance Product Intern (2027 H2)",
+   "company": "Bowtie Life Insurance Company",
+   "location": "Wan Chai District, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4488395120/",
+   "posted": "2026-11-10",
+   "ext_id": "4488395120",
+   "kind": "internship",
+   "company_id": "bowtie",
+   "source": "linkedin",
+   "key": "li:4488395120",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z",
+   "checked": "2026-11-11T07:57:43Z"
+  },
+  {
+   "title": "Product Design Intern (Hong Kong based)",
+   "company": "Bowtie Life Insurance Company",
+   "location": "Wan Chai District, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4487838325/",
+   "posted": "2026-11-10",
+   "ext_id": "4487838325",
+   "kind": "internship",
+   "company_id": "bowtie",
+   "source": "linkedin",
+   "key": "li:4487838325",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z",
+   "checked": "2026-11-11T07:57:43Z"
+  },
+  {
+   "title": "Intern, Media and Communications (Ref: MAC/11132)",
+   "company": "HKPC - Hong Kong Productivity Council",
+   "location": "Kowloon, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4489431690/",
+   "posted": "2026-11-10",
+   "ext_id": "4489431690",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4489431690",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Intern, News Reporting (Winter 2026)",
+   "company": "CNN",
+   "location": "Southern District, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4481564309/",
+   "posted": "2026-11-10",
+   "ext_id": "4481564309",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4481564309",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "2026 Co-op Program",
+   "company": "Synpulse",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4482063709/",
+   "posted": "2026-11-11",
+   "ext_id": "4482063709",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4482063709",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Human Resources and Administration Intern",
+   "company": "Futu Holdings Limited",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4486558336/",
+   "posted": "2026-11-05",
+   "ext_id": "4486558336",
+   "kind": "internship",
+   "company_id": "futu-moomoo",
+   "source": "linkedin",
+   "key": "li:4486558336",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z",
+   "checked": "2026-11-11T07:57:43Z"
+  },
+  {
+   "title": "Global Credit - Sustainable Capital Markets - 6 Months Internship - Hong Kong",
+   "company": "Robert Walters",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4488112242/",
+   "posted": "2026-11-06",
+   "ext_id": "4488112242",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4488112242",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Hong Kong Market Explorer (Internship)",
+   "company": "REAPRA PTE. LTD.",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4489677979/",
+   "posted": "2026-11-11",
+   "ext_id": "4489677979",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4489677979",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Intern, Actuarial",
+   "company": "CTF Life",
+   "location": "Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4486930900/",
+   "posted": "2026-11-06",
+   "ext_id": "4486930900",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4486930900",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Volunteer: HR and Learning & Development Intern (Dec-May)",
+   "company": "Time Auction",
+   "location": "Tuen Mun District, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4486976524/",
+   "posted": "2026-11-10",
+   "ext_id": "4486976524",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4486976524",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Trainee, Capital Markets Operations (One Year Contract)",
+   "company": "Crédit Agricole CIB",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4465983326/",
+   "posted": "2026-11-11",
+   "ext_id": "4465983326",
+   "kind": "graduate",
+   "company_id": "credit-agricole-cib",
+   "source": "linkedin",
+   "key": "li:4465983326",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z",
+   "checked": "2026-11-11T07:57:43Z"
+  },
+  {
+   "title": "Hong Kong Vacation Scheme 2027",
+   "company": "Withers",
+   "location": "Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4478676158/",
+   "posted": "2026-11-10",
+   "ext_id": "4478676158",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4478676158",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Trainee, Financing & Client Services - KYC Services (One Year Contract)",
+   "company": "Crédit Agricole CIB",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4478975898/",
+   "posted": "2026-11-11",
+   "ext_id": "4478975898",
+   "kind": "graduate",
+   "company_id": "credit-agricole-cib",
+   "source": "linkedin",
+   "key": "li:4478975898",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z",
+   "checked": "2026-11-11T07:57:43Z"
+  },
+  {
+   "title": "Commercial Trainee",
+   "company": "Pfizer",
+   "location": "Quarry Bay, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4488096872/",
+   "posted": "2026-11-06",
+   "ext_id": "4488096872",
+   "kind": "graduate",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4488096872",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "2027 Quantitative Researcher Graduate (DV QES)",
+   "company": "DV Trading LLC",
+   "location": "Central & Western District, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4471455092/",
+   "posted": "2026-11-05",
+   "ext_id": "4471455092",
+   "kind": "graduate",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4471455092",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Graduate Consultant, Corporate Finance",
+   "company": "FTI Consulting",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4487706212/",
+   "posted": "2026-11-05",
+   "ext_id": "4487706212",
+   "kind": "graduate",
+   "company_id": "fti-consulting",
+   "source": "linkedin",
+   "key": "li:4487706212",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z",
+   "checked": "2026-11-11T07:57:43Z"
+  },
+  {
+   "title": "Graduate Trainee Programme 2027",
+   "company": "EcoCeres",
+   "location": "Kowloon, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4461316801/",
+   "posted": "2026-11-10",
+   "ext_id": "4461316801",
+   "kind": "graduate",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4461316801",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Global Operations Management Trainee",
+   "company": "Plaza Premium Group",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4478366761/",
+   "posted": "2026-11-09",
+   "ext_id": "4478366761",
+   "kind": "graduate",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4478366761",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Quantitative Research Internship - Master's: Summer 2027",
+   "company": "Susquehanna International Group",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4434994060/",
+   "posted": "2026-11-07",
+   "ext_id": "4434994060",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4434994060",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Full-Stack Engineer (Internship · Financial AI Direction)",
+   "company": "AQUMON",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4488302720/",
+   "posted": "2026-11-10",
+   "ext_id": "4488302720",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4488302720",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "2027 Long/Short Equity Support Research Intern, Hong Kong",
+   "company": "Point72",
+   "location": "Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4488188805/",
+   "posted": "2026-11-06",
+   "ext_id": "4488188805",
+   "kind": "internship",
+   "company_id": "point72",
+   "source": "linkedin",
+   "key": "li:4488188805",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z",
+   "checked": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Machine Learning Research Internship - PhD: 2027",
+   "company": "Susquehanna International Group",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4461857921/",
+   "posted": "2026-11-10",
+   "ext_id": "4461857921",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4461857921",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Software Development Engineer in Test (SDET) Intern",
+   "company": "Bybit",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4487611014/",
+   "posted": "2026-11-07",
+   "ext_id": "4487611014",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4487611014",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Management Trainee (Internship)",
+   "company": "AIA Hong Kong and Macau",
+   "location": "Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4488647519/",
+   "posted": "2026-11-11",
+   "ext_id": "4488647519",
+   "kind": "internship",
+   "company_id": "aia-group",
+   "source": "linkedin",
+   "key": "li:4488647519",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z",
+   "checked": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "财富管理实习生",
+   "company": "AIA Hong Kong and Macau",
+   "location": "Wan Chai District, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4486535981/",
+   "posted": "2026-11-10",
+   "ext_id": "4486535981",
+   "kind": "internship",
+   "company_id": "aia-group",
+   "source": "linkedin",
+   "key": "li:4486535981",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z",
+   "checked": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Audit Trainee (One Year Contract)",
+   "company": "Crédit Agricole CIB",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4467381989/",
+   "posted": "2026-11-11",
+   "ext_id": "4467381989",
+   "kind": "graduate",
+   "company_id": "credit-agricole-cib",
+   "source": "linkedin",
+   "key": "li:4467381989",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z",
+   "checked": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Trainee, OPC Operational Risk (One Year Contract)",
+   "company": "Crédit Agricole CIB",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4477384308/",
+   "posted": "2026-11-11",
+   "ext_id": "4477384308",
+   "kind": "graduate",
+   "company_id": "credit-agricole-cib",
+   "source": "linkedin",
+   "key": "li:4477384308",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z",
+   "checked": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "2027 Business Consultant Trainee — Management Trainee Programme",
+   "company": "AIA Hong Kong and Macau",
+   "location": "Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4486944366/",
+   "posted": "2026-11-06",
+   "ext_id": "4486944366",
+   "kind": "graduate",
+   "company_id": "aia-group",
+   "source": "linkedin",
+   "key": "li:4486944366",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z",
+   "checked": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Credit Risk Trainee (One Year Contract)",
+   "company": "Crédit Agricole CIB",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4476001643/",
+   "posted": "2026-11-11",
+   "ext_id": "4476001643",
+   "kind": "graduate",
+   "company_id": "credit-agricole-cib",
+   "source": "linkedin",
+   "key": "li:4476001643",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Associate Recruitment Consultant – Luxury Retail/ FMCG Desk (Graduate Trainee Program)",
+   "company": "HRnetGroup Company",
+   "location": "Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4487873410/",
+   "posted": "2026-11-11",
+   "ext_id": "4487873410",
+   "kind": "graduate",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4487873410",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "JEC Management Trainee (Year 2027)",
+   "company": "Jardine Engineering Corporation",
+   "location": "Kwun Tong District, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4482857010/",
+   "posted": "2026-11-06",
+   "ext_id": "4482857010",
+   "kind": "graduate",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4482857010",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Business Development and Trainee, Specialist(Fresh Graduate or IANG welcomed)",
+   "company": "AIA Hong Kong and Macau",
+   "location": "Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4488643512/",
+   "posted": "2026-11-11",
+   "ext_id": "4488643512",
+   "kind": "graduate",
+   "company_id": "aia-group",
+   "source": "linkedin",
+   "key": "li:4488643512",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "2027 Graduate Talent Program - Group Human Resources - Hong Kong",
+   "company": "UBS",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4480953555/",
+   "posted": "2026-11-09",
+   "ext_id": "4480953555",
+   "kind": "graduate",
+   "company_id": "ubs",
+   "source": "linkedin",
+   "key": "li:4480953555",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Global Trainee Program 2027",
+   "company": "Lalamove",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4470667552/",
+   "posted": "2026-11-05",
+   "ext_id": "4470667552",
+   "kind": "graduate",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4470667552",
+   "first_seen": "2026-11-11T06:57:35Z",
+   "last_seen": "2026-11-11T19:37:07Z"
+  },
+  {
+   "title": "Quantitative Trading Intern (DV QES)",
+   "company": "DV Trading LLC",
+   "location": "Hong Kong, Hong Kong SAR",
+   "url": "https://www.linkedin.com/jobs/view/4414642006/",
+   "posted": "2026-11-04",
+   "ext_id": "4414642006",
+   "kind": "internship",
+   "company_id": null,
+   "source": "linkedin",
+   "key": "li:4414642006",
    "first_seen": "2026-11-11T06:57:35Z",
    "last_seen": "2026-11-11T07:57:43Z"
   },
@@ -4281,48 +5325,6 @@
    "checked": "2026-11-11T06:57:35Z"
   },
   {
-   "title": "Business Development (Sales) Intern - APAC",
-   "company": "Oxford Economics",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4434827707/",
-   "posted": "2026-11-10",
-   "ext_id": "4434827707",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4434827707",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Hong Kong STEM Intern(Chinese speaker)",
-   "company": "BRIDGE AI GAMING LIMITED",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4487597290/",
-   "posted": "2026-11-05",
-   "ext_id": "4487597290",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4487597290",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Test Development Engineer Intern (User Service)",
-   "company": "Bybit",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4486769903/",
-   "posted": "2026-11-05",
-   "ext_id": "4486769903",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4486769903",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
    "title": "市场营销实习生 Sales & Marketing Assistant Intern",
    "company": "Zeuspace Group",
    "location": "Hong Kong SAR",
@@ -4333,147 +5335,6 @@
    "company_id": null,
    "source": "linkedin",
    "key": "li:4488647684",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Big Data Development Engineer Intern (Realtime)",
-   "company": "Bybit",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4488303858/",
-   "posted": "2026-11-10",
-   "ext_id": "4488303858",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4488303858",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "商务经理实习生",
-   "company": "Baidu, Inc.",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4487696333/",
-   "posted": "2026-11-09",
-   "ext_id": "4487696333",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4487696333",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Actuarial Intern - Life Practice",
-   "company": "Milliman",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4412896619/",
-   "posted": "2026-11-06",
-   "ext_id": "4412896619",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4412896619",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "People & Culture Intern",
-   "company": "Mandarin Oriental",
-   "location": "Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4487727968/",
-   "posted": "2026-11-05",
-   "ext_id": "4487727968",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4487727968",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Marketing Intern",
-   "company": "China Asset Management (Hong Kong)",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4479790806/",
-   "posted": "2026-11-11",
-   "ext_id": "4479790806",
-   "kind": "internship",
-   "company_id": "china-asset-management-co",
-   "source": "linkedin",
-   "key": "li:4479790806",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z",
-   "checked": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "2027Wealth Management Intern",
-   "company": "Hiwin Financial Consultant Company",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4473729860/",
-   "posted": "2026-11-09",
-   "ext_id": "4473729860",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4473729860",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Intern, Tax",
-   "company": "Under Armour",
-   "location": "Kowloon Bay, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4489426140/",
-   "posted": "2026-11-10",
-   "ext_id": "4489426140",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4489426140",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Intern, Japan ICG Sales (6-months, LoA)",
-   "company": "Apollo Global Management, Inc.",
-   "location": "Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4486570752/",
-   "posted": "2026-11-05",
-   "ext_id": "4486570752",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4486570752",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Global Markets - AMM - 6 Months Internship - Hong Kong",
-   "company": "Robert Walters",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4486932912/",
-   "posted": "2026-11-06",
-   "ext_id": "4486932912",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4486932912",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Digital Marketing Intern",
-   "company": "First Page",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4488811706/",
-   "posted": "2026-11-09",
-   "ext_id": "4488811706",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4488811706",
    "first_seen": "2026-11-11T06:57:35Z",
    "last_seen": "2026-11-11T07:57:43Z"
   },
@@ -4506,205 +5367,6 @@
    "last_seen": "2026-11-11T07:57:43Z"
   },
   {
-   "title": "Intern - Visual Merchandising",
-   "company": "Louis Vuitton",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4489450997/",
-   "posted": "2026-11-10",
-   "ext_id": "4489450997",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4489450997",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Life Sciences Summer Internship Program (HK/Shenzhen/Shanghai)",
-   "company": "Hong Kong Life Sciences Society (HKLSS)",
-   "location": "Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4486573355/",
-   "posted": "2026-11-05",
-   "ext_id": "4486573355",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4486573355",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Human Resources Intern - Corporate Office",
-   "company": "Hyatt",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4488184717/",
-   "posted": "2026-11-06",
-   "ext_id": "4488184717",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4488184717",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "MBA Intern, 2027",
-   "company": "Google",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4478868517/",
-   "posted": "2026-11-06",
-   "ext_id": "4478868517",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4478868517",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Internship, Hong Kong",
-   "company": "The Hoffman Agency",
-   "location": "Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4340399343/",
-   "posted": "2026-11-08",
-   "ext_id": "4340399343",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4340399343",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Asset Management Intern",
-   "company": "TF International Securities",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4487977630/",
-   "posted": "2026-11-10",
-   "ext_id": "4487977630",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4487977630",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Internship - AI Engineer",
-   "company": "Infineon Technologies",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4480996815/",
-   "posted": "2026-11-10",
-   "ext_id": "4480996815",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4480996815",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Intern (Trend & Design) (Oct 26 - Jan 27) - HK",
-   "company": "Lidl & Kaufland Asia",
-   "location": "Kowloon, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4476266841/",
-   "posted": "2026-11-05",
-   "ext_id": "4476266841",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4476266841",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Compliance and KYC Intern",
-   "company": "Longbridge Singapore",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4479552805/",
-   "posted": "2026-11-05",
-   "ext_id": "4479552805",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4479552805",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Social Media Creative Intern",
-   "company": "Carousell Group",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4489417809/",
-   "posted": "2026-11-10",
-   "ext_id": "4489417809",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4489417809",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Intern, Business Continuity Management",
-   "company": "Allianz Global Investors",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4487761183/",
-   "posted": "2026-11-05",
-   "ext_id": "4487761183",
-   "kind": "internship",
-   "company_id": "allianz-global-investors",
-   "source": "linkedin",
-   "key": "li:4487761183",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z",
-   "checked": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Research Intern",
-   "company": "Microsoft",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4462188381/",
-   "posted": "2026-11-05",
-   "ext_id": "4462188381",
-   "kind": "internship",
-   "company_id": "microsoft",
-   "source": "linkedin",
-   "key": "li:4462188381",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z",
-   "checked": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Actuarial/ Insurance Product Intern (2027 H1)",
-   "company": "Bowtie Life Insurance Company",
-   "location": "Wan Chai District, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4488395120/",
-   "posted": "2026-11-10",
-   "ext_id": "4488395120",
-   "kind": "internship",
-   "company_id": "bowtie",
-   "source": "linkedin",
-   "key": "li:4488395120",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z",
-   "checked": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Governance Intern (For MPPM Students from The Education University Hong Kong only)",
-   "company": "English Schools Foundation",
-   "location": "Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4477362311/",
-   "posted": "2026-11-06",
-   "ext_id": "4477362311",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4477362311",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
    "title": "Student Trainee",
    "company": "Marriott International",
    "location": "Hong Kong, Hong Kong SAR",
@@ -4715,106 +5377,6 @@
    "company_id": null,
    "source": "linkedin",
    "key": "li:4413434050",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Product Design Intern (Hong Kong based)",
-   "company": "Bowtie Life Insurance Company",
-   "location": "Wan Chai District, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4487838325/",
-   "posted": "2026-11-10",
-   "ext_id": "4487838325",
-   "kind": "internship",
-   "company_id": "bowtie",
-   "source": "linkedin",
-   "key": "li:4487838325",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z",
-   "checked": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Intern, Media and Communications (Ref: MAC/11132)",
-   "company": "HKPC - Hong Kong Productivity Council",
-   "location": "Kowloon, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4489431690/",
-   "posted": "2026-11-10",
-   "ext_id": "4489431690",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4489431690",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Intern, News Reporting (Winter 2026)",
-   "company": "CNN",
-   "location": "Southern District, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4481564309/",
-   "posted": "2026-11-10",
-   "ext_id": "4481564309",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4481564309",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Human Resources and Administration Intern",
-   "company": "Futu Holdings Limited",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4486558336/",
-   "posted": "2026-11-05",
-   "ext_id": "4486558336",
-   "kind": "internship",
-   "company_id": "futu-moomoo",
-   "source": "linkedin",
-   "key": "li:4486558336",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z",
-   "checked": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Global Credit - Sustainable Capital Markets - 6 Months Internship - Hong Kong",
-   "company": "Robert Walters",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4488112242/",
-   "posted": "2026-11-06",
-   "ext_id": "4488112242",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4488112242",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Hong Kong Market Explorer (Internship)",
-   "company": "REAPRA PTE. LTD.",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4489677979/",
-   "posted": "2026-11-11",
-   "ext_id": "4489677979",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4489677979",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Intern, Actuarial",
-   "company": "CTF Life",
-   "location": "Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4486930900/",
-   "posted": "2026-11-06",
-   "ext_id": "4486930900",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4486930900",
    "first_seen": "2026-11-11T06:57:35Z",
    "last_seen": "2026-11-11T07:57:43Z"
   },
@@ -4833,64 +5395,6 @@
    "last_seen": "2026-11-11T07:57:43Z"
   },
   {
-   "title": "Volunteer: HR and Learning & Development Intern (Dec-May)",
-   "company": "Time Auction",
-   "location": "Tuen Mun District, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4486976524/",
-   "posted": "2026-11-10",
-   "ext_id": "4486976524",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4486976524",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Trainee, Capital Markets Operations (One Year Contract)",
-   "company": "Crédit Agricole CIB",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4465983326/",
-   "posted": "2026-11-11",
-   "ext_id": "4465983326",
-   "kind": "graduate",
-   "company_id": "credit-agricole-cib",
-   "source": "linkedin",
-   "key": "li:4465983326",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z",
-   "checked": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Hong Kong Vacation Scheme 2027",
-   "company": "Withers",
-   "location": "Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4478676158/",
-   "posted": "2026-11-10",
-   "ext_id": "4478676158",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4478676158",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Trainee, Financing & Client Services - KYC Services (One Year Contract)",
-   "company": "Crédit Agricole CIB",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4478975898/",
-   "posted": "2026-11-11",
-   "ext_id": "4478975898",
-   "kind": "graduate",
-   "company_id": "credit-agricole-cib",
-   "source": "linkedin",
-   "key": "li:4478975898",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z",
-   "checked": "2026-11-11T07:57:43Z"
-  },
-  {
    "title": "2027 Digital & IT Graduate Trainee Programme (HK & GBA)",
    "company": "Cathay Pacific",
    "location": "Hong Kong, Hong Kong SAR",
@@ -4904,245 +5408,6 @@
    "first_seen": "2026-11-11T06:57:35Z",
    "last_seen": "2026-11-11T07:57:43Z",
    "checked": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Commercial Trainee",
-   "company": "Pfizer",
-   "location": "Quarry Bay, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4488096872/",
-   "posted": "2026-11-06",
-   "ext_id": "4488096872",
-   "kind": "graduate",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4488096872",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "2027 Quantitative Researcher Graduate (DV QES)",
-   "company": "DV Trading LLC",
-   "location": "Central & Western District, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4471455092/",
-   "posted": "2026-11-05",
-   "ext_id": "4471455092",
-   "kind": "graduate",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4471455092",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Graduate Consultant, Corporate Finance",
-   "company": "FTI Consulting",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4487706212/",
-   "posted": "2026-11-05",
-   "ext_id": "4487706212",
-   "kind": "graduate",
-   "company_id": "fti-consulting",
-   "source": "linkedin",
-   "key": "li:4487706212",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z",
-   "checked": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Graduate Trainee Programme 2027",
-   "company": "EcoCeres",
-   "location": "Kowloon, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4461316801/",
-   "posted": "2026-11-10",
-   "ext_id": "4461316801",
-   "kind": "graduate",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4461316801",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Global Operations Management Trainee",
-   "company": "Plaza Premium Group",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4478366761/",
-   "posted": "2026-11-09",
-   "ext_id": "4478366761",
-   "kind": "graduate",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4478366761",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Quantitative Research Internship - Master's: Summer 2027",
-   "company": "Susquehanna International Group",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4434994060/",
-   "posted": "2026-11-07",
-   "ext_id": "4434994060",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4434994060",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Full-Stack Engineer (Internship · Financial AI Direction)",
-   "company": "AQUMON",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4488302720/",
-   "posted": "2026-11-10",
-   "ext_id": "4488302720",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4488302720",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "2027 Long/Short Equity Support Research Intern, Hong Kong",
-   "company": "Point72",
-   "location": "Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4488188805/",
-   "posted": "2026-11-06",
-   "ext_id": "4488188805",
-   "kind": "internship",
-   "company_id": "point72",
-   "source": "linkedin",
-   "key": "li:4488188805",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Machine Learning Research Internship - PhD: 2027",
-   "company": "Susquehanna International Group",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4461857921/",
-   "posted": "2026-11-10",
-   "ext_id": "4461857921",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4461857921",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Software Development Engineer in Test (SDET) Intern",
-   "company": "Bybit",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4487611014/",
-   "posted": "2026-11-07",
-   "ext_id": "4487611014",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4487611014",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Management Trainee (Internship)",
-   "company": "AIA Hong Kong and Macau",
-   "location": "Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4488647519/",
-   "posted": "2026-11-11",
-   "ext_id": "4488647519",
-   "kind": "internship",
-   "company_id": "aia-group",
-   "source": "linkedin",
-   "key": "li:4488647519",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "财富管理实习生",
-   "company": "AIA Hong Kong and Macau",
-   "location": "Wan Chai District, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4486535981/",
-   "posted": "2026-11-10",
-   "ext_id": "4486535981",
-   "kind": "internship",
-   "company_id": "aia-group",
-   "source": "linkedin",
-   "key": "li:4486535981",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Audit Trainee (One Year Contract)",
-   "company": "Crédit Agricole CIB",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4467381989/",
-   "posted": "2026-11-11",
-   "ext_id": "4467381989",
-   "kind": "graduate",
-   "company_id": "credit-agricole-cib",
-   "source": "linkedin",
-   "key": "li:4467381989",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Trainee, OPC Operational Risk (One Year Contract)",
-   "company": "Crédit Agricole CIB",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4477384308/",
-   "posted": "2026-11-11",
-   "ext_id": "4477384308",
-   "kind": "graduate",
-   "company_id": "credit-agricole-cib",
-   "source": "linkedin",
-   "key": "li:4477384308",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "2027 Business Consultant Trainee — Management Trainee Programme",
-   "company": "AIA Hong Kong and Macau",
-   "location": "Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4486944366/",
-   "posted": "2026-11-06",
-   "ext_id": "4486944366",
-   "kind": "graduate",
-   "company_id": "aia-group",
-   "source": "linkedin",
-   "key": "li:4486944366",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Credit Risk Trainee (One Year Contract)",
-   "company": "Crédit Agricole CIB",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4476001643/",
-   "posted": "2026-11-11",
-   "ext_id": "4476001643",
-   "kind": "graduate",
-   "company_id": "credit-agricole-cib",
-   "source": "linkedin",
-   "key": "li:4476001643",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Associate Recruitment Consultant – Luxury Retail/ FMCG Desk (Graduate Trainee Program)",
-   "company": "HRnetGroup Company",
-   "location": "Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4487873410/",
-   "posted": "2026-11-11",
-   "ext_id": "4487873410",
-   "kind": "graduate",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4487873410",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
   },
   {
    "title": "Langham Leadership Trainee (Rooms) - Cordis, Hong Kong",
@@ -5159,20 +5424,6 @@
    "last_seen": "2026-11-11T07:57:43Z"
   },
   {
-   "title": "JEC Management Trainee (Year 2027)",
-   "company": "Jardine Engineering Corporation",
-   "location": "Kwun Tong District, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4482857010/",
-   "posted": "2026-11-06",
-   "ext_id": "4482857010",
-   "kind": "graduate",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4482857010",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
    "title": "2027 Cargo Graduate Trainee Programme",
    "company": "Cathay Pacific",
    "location": "Hong Kong, Hong Kong SAR",
@@ -5183,48 +5434,6 @@
    "company_id": "cathay-pacific",
    "source": "linkedin",
    "key": "li:4479289409",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Business Development and Trainee, Specialist(Fresh Graduate or IANG welcomed)",
-   "company": "AIA Hong Kong and Macau",
-   "location": "Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4488643512/",
-   "posted": "2026-11-11",
-   "ext_id": "4488643512",
-   "kind": "graduate",
-   "company_id": "aia-group",
-   "source": "linkedin",
-   "key": "li:4488643512",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "2027 Graduate Talent Program - Group Human Resources - Hong Kong",
-   "company": "UBS",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4480953555/",
-   "posted": "2026-11-09",
-   "ext_id": "4480953555",
-   "kind": "graduate",
-   "company_id": "ubs",
-   "source": "linkedin",
-   "key": "li:4480953555",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T07:57:43Z"
-  },
-  {
-   "title": "Global Trainee Program 2027",
-   "company": "Lalamove",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4470667552/",
-   "posted": "2026-11-05",
-   "ext_id": "4470667552",
-   "kind": "graduate",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4470667552",
    "first_seen": "2026-11-11T06:57:35Z",
    "last_seen": "2026-11-11T07:57:43Z"
   },
@@ -5739,20 +5948,6 @@
    "last_seen": "2026-11-11T06:57:35Z"
   },
   {
-   "title": "Associate Solutions Architect Intern, Hong Kong",
-   "company": "Amazon Web Services (AWS)",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4473230870/",
-   "posted": "2026-10-20",
-   "ext_id": "4473230870",
-   "kind": "internship",
-   "company_id": "amazon",
-   "source": "linkedin",
-   "key": "li:4473230870",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T06:57:35Z"
-  },
-  {
    "title": "Information Technology Intern",
    "company": "China Asset Management (Hong Kong)",
    "location": "Hong Kong, Hong Kong SAR",
@@ -6257,20 +6452,6 @@
    "last_seen": "2026-11-11T06:57:35Z"
   },
   {
-   "title": "Marketing Intern",
-   "company": "Carousell Group",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4462231271/",
-   "posted": "2026-10-20",
-   "ext_id": "4462231271",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4462231271",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T06:57:35Z"
-  },
-  {
    "title": "Service Intern/ Technician Intern",
    "company": "Getinge",
    "location": "Kowloon, Hong Kong SAR",
@@ -6463,20 +6644,6 @@
    "company_id": null,
    "source": "linkedin",
    "key": "li:4484773999",
-   "first_seen": "2026-11-11T06:57:35Z",
-   "last_seen": "2026-11-11T06:57:35Z"
-  },
-  {
-   "title": "2026 Co-op Program",
-   "company": "Synpulse",
-   "location": "Hong Kong, Hong Kong SAR",
-   "url": "https://www.linkedin.com/jobs/view/4482063709/",
-   "posted": "2026-10-21",
-   "ext_id": "4482063709",
-   "kind": "internship",
-   "company_id": null,
-   "source": "linkedin",
-   "key": "li:4482063709",
    "first_seen": "2026-11-11T06:57:35Z",
    "last_seen": "2026-11-11T06:57:35Z"
   },
