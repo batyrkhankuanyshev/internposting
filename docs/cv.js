@@ -13,6 +13,26 @@ const K = { master: "cv.master", versions: "cv.versions", scratchJd: "cv.scratch
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const rich = (s) => esc(s).replace(/\*\*([\s\S]+?)\*\*/g, "<b>$1</b>"); // CV text keeps bold as **…**
 const plain = (s) => String(s ?? "").replace(/\*\*/g, "");
+
+// Contact details become links: email, phone and web addresses, between "•" or "|" separators.
+const linkKind = (t) =>
+  /^[^\s@]+@[^\s@]+\.[a-z]{2,}$/i.test(t) ? "email"
+    : /^\+?[\d\s().-]+$/.test(t) && t.replace(/\D/g, "").length >= 7 ? "phone"
+      : /^(https?:\/\/)?[\w-]+(\.[\w-]+)+(\/\S*)?$/i.test(t) && /[a-z]{2}/i.test(t) ? "web" : null;
+const autoHref = (t, kind) => kind === "email" ? "mailto:" + t : kind === "phone" ? "tel:" + t.replace(/[^\d+]/g, "") : /^https?:/i.test(t) ? t : "https://" + t;
+const safeHref = (h) => /^(https?:|mailto:|tel:)/i.test(h || "");
+function contactHtml(line, head) {
+  return String(line ?? "").split(/(\s+[•|·▪]\s+)/).map((part, i) => {
+    if (i % 2 || part.includes("**")) return rich(part);
+    const [, pre, t, post] = part.match(/^(\s*)([\s\S]*?)(\s*)$/), kind = linkKind(t) || (head.links[t] ? "web" : null);
+    if (!kind) return esc(part);
+    const href = safeHref(head.links[t]) ? head.links[t] : autoHref(t, kind);
+    return `${pre}<a href="${esc(href)}"${head.styled[kind] ? ' class="lk"' : ""}>${esc(t)}</a>${post}`;
+  }).join("");
+}
+// CVs imported before the header layout was read: phone and email beside the name, the rest under the rule.
+const headOf = (cv) => cv.head || { nameSize: 21, nameAlign: "left", beside: Math.min(1, cv.contact.length), rule: Math.min(1, cv.contact.length),
+  size: [], align: [], styled: { web: true }, linkColor: "", links: {} };
 const clone = (o) => JSON.parse(JSON.stringify(o));
 const debounce = (fn, ms) => { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; };
 const titleCase = (s) => s.toLowerCase().replace(/(^|[\s-])\p{L}/gu, (m) => m.toUpperCase());
@@ -23,6 +43,7 @@ const S = { cv: null, jobKey: params.get("job") || "", job: null, jd: "", ai: nu
 
 // ------------------------------------------------------------------ .docx import
 const W = "http://schemas.openxmlformats.org/wordprocessingml/2006/main";
+const R = "http://schemas.openxmlformats.org/officeDocument/2006/relationships";
 const KNOWN_HEAD = /^(education|(professional |work |relevant )?experience|employment( history)?|internships?|projects?|leadership.*|activities|extra-?curricular.*|skills.*|technical skills|certifications?.*|awards.*|honou?rs.*|languages|publications|research.*|volunteer.*|interests|summary|profile|objective|additional information)$/i;
 
 async function parseDocx(buf) {
@@ -48,6 +69,16 @@ async function parseDocx(buf) {
     size: Math.abs(width - 11906) < 200 ? "a4" : "letter",
     margin: mar ? Math.min(1, Math.max(0.3, +mar.getAttributeNS(W, "left") / 1440)) : 0.6,
   };
+  const xml = async (name) => { const f = zip.file(name); return f && new DOMParser().parseFromString(await f.async("string"), "application/xml"); };
+  const rels = {}; // hyperlink id -> address
+  const relDoc = await xml("word/_rels/document.xml.rels");
+  if (relDoc) for (const r of relDoc.getElementsByTagName("Relationship")) if (/\/hyperlink$/.test(r.getAttribute("Type"))) rels[r.getAttribute("Id")] = r.getAttribute("Target");
+  let baseSz = 20; // Word's size when no style sets one: 10pt, in half-points
+  const styles = await xml("word/styles.xml");
+  if (styles) {
+    const normal = all(styles, "style").find((st) => st.getAttributeNS(W, "styleId") === "Normal");
+    for (const el of [all(styles, "rPrDefault")[0], normal]) { const sz = el && all(el, "sz")[0]; if (sz && +val(sz)) baseSz = +val(sz); }
+  }
 
   const paras = [];
   for (const p of all(doc, "p")) {
@@ -56,20 +87,30 @@ async function parseDocx(buf) {
     let list = !!(pPr && all(pPr, "numPr").length) || /list/i.test(style);
     const segs = [];
     for (const r of all(p, "r")) {
-      let up = r.parentNode;
-      while (up && up.localName !== "p") up = up.parentNode;
+      let up = r.parentNode, link = null;
+      while (up && up.localName !== "p") { if (up.localName === "hyperlink") link = up; up = up.parentNode; }
       if (up !== p) continue; // a run in a nested text-box paragraph
-      const b = kid(kid(r, "rPr"), "b");
+      const rPr = kid(r, "rPr"), b = kid(rPr, "b"), u = kid(rPr, "u"), color = val(kid(rPr, "color"));
       const bold = !!b && !/^(0|false|off)$/i.test(val(b) || "");
+      const run = {
+        sz: +val(kid(rPr, "sz")) || baseSz,
+        href: link && rels[link.getAttributeNS(R, "id")],
+        color: color && !/^(auto|000000)$/i.test(color) ? "#" + color : "",
+        u: !!u && val(u) !== "none",
+      };
       for (const c of r.children) {
         const t = { t: c.textContent, tab: "\t", br: " ", cr: " ", noBreakHyphen: "-" }[c.localName];
-        if (t) segs.push({ t: c.localName === "t" ? c.textContent : t, b: bold && c.localName === "t" });
+        if (t) segs.push({ ...run, t: c.localName === "t" ? c.textContent : t, b: bold && c.localName === "t" });
       }
     }
     if (!segs.some((s) => s.t.trim())) continue;
     const m = !list && segs[0].t.match(/^\s*[•▪◦‣●–-]\s+/);
     if (m) { list = true; segs[0] = { ...segs[0], t: segs[0].t.slice(m[0].length) }; }
-    paras.push({ segs, text: segs.map((s) => s.t).join(""), list, style });
+    const bdr = kid(kid(pPr, "pBdr"), "bottom"), tabStop = pPr && all(pPr, "tab")[0];
+    paras.push({
+      segs, text: segs.map((s) => s.t).join(""), list, style,
+      jc: val(kid(pPr, "jc")) || "", rule: !!bdr && !/^(none|nil)$/.test(val(bdr) || ""), tabAlign: (tabStop && val(tabStop)) || "",
+    });
   }
 
   const toRich = (segs) => {
@@ -82,22 +123,22 @@ async function parseDocx(buf) {
     return (open ? out + "**" : out).replace(/\*\*(\s*)\*\*/g, "$1").replace(/[\r\n]+/g, " ").replace(/ {3,}/g, "  ").trim();
   };
   const isUpper = (s) => /\p{Lu}/u.test(s) && s === s.toUpperCase();
-  const cv = { version: 1, page, name: "", contact: [], sections: [], notes };
-  let sec = null;
+  const cv = { version: 2, page, name: "", contact: [], sections: [], notes };
+  let sec = null, namePara = null;
+  const headParas = [];
   for (const p of paras) {
     const t = p.text.replace(/\s+/g, " ").trim();
     const tab = p.text.indexOf("\t");
     const allBold = p.segs.filter((s) => s.t.trim()).every((s) => s.b);
     if (!cv.name) { // first paragraph: the name, maybe with contact details after a tab
       cv.name = (tab > 0 ? p.text.slice(0, tab) : t).trim();
-      const rest = tab > 0 ? p.text.slice(tab + 1).replace(/\t+/g, "  •  ").trim() : "";
-      if (rest) cv.contact.push(rest);
+      namePara = p;
       continue;
     }
     const heading = !p.list && tab < 0 && t.length <= 45 &&
       (/heading|title/i.test(p.style) || (allBold && (isUpper(t) || KNOWN_HEAD.test(t))) || (isUpper(t) && KNOWN_HEAD.test(t)));
     if (heading) { sec = { title: t, blocks: [] }; cv.sections.push(sec); continue; }
-    if (!sec) { cv.contact.push(p.text.replace(/^\s+/, "").replace(/\t+/g, "  •  ").trim()); continue; }
+    if (!sec) { headParas.push(p); continue; }
     const last = sec.blocks[sec.blocks.length - 1];
     if (p.list) {
       if (last && last.bullets) last.bullets.push(toRich(p.segs));
@@ -111,7 +152,49 @@ async function parseDocx(buf) {
     }
   }
   if (!cv.sections.length) throw new Error("no section headings (like EDUCATION or EXPERIENCE) were found.");
+  cv.head = readHead(namePara, headParas, cv.contact);
   return cv;
+}
+
+// How the name and contact lines are laid out: which lines sit beside the name, where the rule goes,
+// each line's size and alignment, and how links were styled. cv.contact gets the lines' text.
+function readHead(namePara, headParas, contact) {
+  const pt = (segs) => { // the size most of the text is set in
+    const w = {};
+    for (const s of segs) if (s.t.trim()) w[s.sz] = (w[s.sz] || 0) + s.t.trim().length;
+    return (+Object.entries(w).sort((a, b) => b[1] - a[1])[0]?.[0] || 20) / 2;
+  };
+  const text = (segs) => segs.map((s) => s.t).join("").replace(/^\s+|\s+$/g, "").replace(/\s*\t+\s*/g, "  •  ");
+  const head = { nameSize: 21, nameAlign: "left", beside: 0, rule: null, size: [], align: [], styled: {}, linkColor: "", links: {} };
+  const used = [];
+  const cut = namePara.segs.findIndex((s) => s.t === "\t");
+  const nameSegs = cut > 0 ? namePara.segs.slice(0, cut) : namePara.segs;
+  head.nameSize = pt(nameSegs);
+  head.nameAlign = /center/.test(namePara.jc) ? "center" : "left";
+  const rest = cut > 0 ? namePara.segs.slice(cut + 1) : [];
+  if (text(rest)) { contact.push(text(rest)); head.size.push(pt(rest)); head.align.push("right"); head.beside = 1; used.push(...rest); }
+  if (namePara.rule) head.rule = contact.length;
+  for (const p of headParas) {
+    if (!text(p.segs)) continue;
+    contact.push(text(p.segs)); head.size.push(pt(p.segs)); used.push(...p.segs);
+    const lead = p.segs[0].t === "\t";
+    head.align.push(/center/.test(p.jc) ? "center" : /right|end/.test(p.jc) ? "right"
+      : lead ? (/center/.test(p.tabAlign) ? "center" : "right") : "left");
+    if (p.rule && head.rule == null) head.rule = contact.length;
+  }
+  const runs = []; // Word may split one link's text over several runs
+  for (const x of used) {
+    const last = runs[runs.length - 1];
+    if (last && x.href && last.href === x.href) Object.assign(last, { t: last.t + x.t, color: last.color || x.color, u: last.u || x.u });
+    else runs.push({ ...x });
+  }
+  for (const s of runs.filter((x) => x.t.trim() && (x.href || x.color || x.u))) {
+    const t = s.t.trim(), kind = linkKind(t) || (s.href ? "web" : null); // "web" also covers a link worded like "Portfolio"
+    if (!kind) continue;
+    if (s.color || s.u) { head.styled[kind] = true; if (s.color) head.linkColor = s.color; }
+    if (s.href && safeHref(s.href) && autoHref(t, kind).replace(/^https?:|\/$/g, "") !== s.href.replace(/^https?:|\/$/g, "")) head.links[t] = s.href;
+  }
+  return head;
 }
 
 // ------------------------------------------------------------------ CV model helpers
@@ -175,9 +258,16 @@ function renderPaper() {
   paper.style.setProperty("--m", cv.page.margin + "in");
   $("#pagestyle").textContent = `@page { size: ${cv.page.size === "a4" ? "A4" : "letter"}; margin: 0; }`;
   $("#pagesize").value = cv.page.size;
+  const h = headOf(cv), n = cv.contact.length, rule = h.rule == null ? n : h.rule;
+  paper.style.setProperty("--link", h.linkColor || "#1155cc");
+  const lines = (from, to, cls) => to > from ? `<div class="cv-contact ${cls}">${cv.contact.slice(from, to).map((c, k) => {
+    const i = from + k, pt = h.size[i] || 9;
+    return `<div ${ed(`contact.${i}`, "head")} data-pt="${pt}" style="font-size:${pt}pt;text-align:${h.align[i] || "right"}">${contactHtml(c, h)}</div>`;
+  }).join("")}</div>` : "";
   paper.innerHTML =
-    `<header class="cv-head"><div class="cv-name" ${ed("name", "head")}>${rich(cv.name)}</div>` +
-    `<div class="cv-contact">${cv.contact.map((c, i) => `<div ${ed(`contact.${i}`, "head")}>${rich(c)}</div>`).join("")}</div></header>` +
+    `<header class="cv-head${h.rule == null ? " norule" : ""}"><div class="cv-namerow${h.nameAlign === "center" && !h.beside ? " center" : ""}">` +
+    `<div class="cv-name" ${ed("name", "head")} style="font-size:${h.nameSize}pt">${rich(cv.name)}</div>${lines(0, h.beside, "beside")}</div>` +
+    `${lines(h.beside, rule, "above")}</header>${lines(rule, n, "below")}` +
     cv.sections.map((s, si) => `<section class="cv-sec"><h2 ${ed(`sections.${si}.title`, "section")}>${rich(s.title)}</h2>` +
       s.blocks.map((b, bi) => blockHtml(b, `sections.${si}.blocks.${bi}`)).join("") + "</section>").join("") +
     `<div class="pagebreak" hidden><span>page 2 starts here</span></div>`;
@@ -185,15 +275,15 @@ function renderPaper() {
 }
 
 // Keep each contact line on one line, as in Word. The web font runs a little wider than Word's Garamond,
-// so shrink the contact block slightly when a line would wrap, and let it wrap only below 7.5pt.
+// so shrink a line slightly if it would wrap, and let it wrap only if it still doesn't fit at 85% size.
 function fitContact(paper) {
-  const c = $(".cv-contact", paper);
-  if (!c) return;
-  c.style.fontSize = "";
-  c.classList.add("oneline");
-  const over = () => [...c.children].some((e) => e.scrollWidth > e.clientWidth + 1);
-  for (let pt = 8.75; over() && pt >= 7.5; pt -= 0.25) c.style.fontSize = pt + "pt";
-  if (over()) { c.classList.remove("oneline"); c.style.fontSize = ""; }
+  for (const el of paper.querySelectorAll(".cv-contact > [data-pt]")) {
+    const base = +el.dataset.pt, over = () => el.scrollWidth > el.clientWidth + 1;
+    el.style.fontSize = base + "pt";
+    el.style.whiteSpace = "";
+    for (let pt = base - 0.25; over() && pt >= base * 0.85; pt -= 0.25) el.style.fontSize = pt + "pt";
+    if (over()) { el.style.fontSize = base + "pt"; el.style.whiteSpace = "pre-wrap"; }
+  }
 }
 
 function layout() {
@@ -717,7 +807,12 @@ async function init() {
     document.execCommand("insertText", false, (e.clipboardData ? e.clipboardData.getData("text/plain") : "").replace(/\s+/g, " "));
   });
   paper.addEventListener("focusin", (e) => showTools(e.target.closest("[data-path]")));
-  paper.addEventListener("focusout", () => { S.typing = null; setTimeout(() => { if (!paper.contains(document.activeElement)) hideTools(); }, 150); });
+  paper.addEventListener("focusout", (e) => {
+    S.typing = null;
+    const el = e.target.closest && e.target.closest('[data-path^="contact."]');
+    if (el) { const html = contactHtml(getP(el.dataset.path), headOf(S.cv)); if (el.innerHTML !== html) el.innerHTML = html; } // relink edited details
+    setTimeout(() => { if (!paper.contains(document.activeElement)) hideTools(); }, 150);
+  });
   const tools = $("#tools");
   tools.addEventListener("mousedown", (e) => e.preventDefault()); // keep the caret in the line being edited
   tools.addEventListener("click", (e) => { const b = e.target.closest("[data-a]"); if (b && S.toolEl) act(b.dataset.a, S.toolEl); });
@@ -773,6 +868,9 @@ async function init() {
   });
 
   addEventListener("resize", debounce(layout, 100));
+  // Also re-fit when the preview's width changes without a window resize, e.g. a page opened in a background tab.
+  let wrapW = 0;
+  if (window.ResizeObserver) new ResizeObserver(() => { const w = $("#paperwrap").clientWidth; if (w !== wrapW) { wrapW = w; layout(); } }).observe($("#paperwrap"));
   if (document.fonts) document.fonts.ready.then(() => { layout(); renderChecks(); });
 }
 
