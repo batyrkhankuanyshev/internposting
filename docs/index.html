@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HK Internship Radar</title>
+  <meta name="description" content="Live Hong Kong internship openings across 214 finance and corporate employers, refreshed every 6 hours.">
+  <link rel="alternate" type="application/rss+xml" title="HK Internship Radar" href="feed.xml">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%230f766e'/><circle cx='16' cy='16' r='8' fill='none' stroke='white' stroke-width='2'/><circle cx='16' cy='16' r='2.5' fill='white'/></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <div class="brand">
+        <h1>HK Internship Radar</h1>
+        <p class="sub" id="updated">Loading…</p>
+      </div>
+      <div class="stats" id="stats"></div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="controls" aria-label="Filters">
+      <input id="q" type="search" placeholder="Search company, role or location" autocomplete="off">
+      <div class="seg" role="group" aria-label="Type">
+        <button data-kind="internship" class="on">Internships</button>
+        <button data-kind="graduate">Graduate</button>
+        <button data-kind="all">All</button>
+      </div>
+      <select id="cat" aria-label="Category"><option value="">All categories</option></select>
+      <label class="chk"><input type="checkbox" id="hiring" checked> Hiring only</label>
+      <label class="chk"><input type="checkbox" id="newonly"> New only</label>
+      <label class="chk"><input type="checkbox" id="showhidden"> Show hidden</label>
+    </section>
+
+    <nav class="tabs" role="tablist">
+      <button role="tab" data-tab="mine" class="on">Your companies <span id="n-mine"></span></button>
+      <button role="tab" data-tab="other">Other companies (LinkedIn) <span id="n-other"></span></button>
+      <button role="tab" data-tab="health">Sources</button>
+      <button role="tab" data-tab="alerts">Alerts</button>
+    </nav>
+
+    <section id="mine" class="panel"></section>
+    <section id="other" class="panel" hidden></section>
+    <section id="health" class="panel" hidden></section>
+    <section id="alerts" class="panel" hidden>
+      <div class="card prose">
+        <h2>Getting notified</h2>
+        <p>The scanner runs on GitHub Actions every 6 hours. When it finds a new opening at a company in your tracker, or a university internship scheme posts a newer job list, it:</p>
+        <ul>
+          <li><strong>Opens a GitHub issue</strong> listing the new roles and mentions you, so GitHub emails you (and pushes to the GitHub mobile app). Make sure email notifications are on under <em>GitHub → Settings → Notifications</em>.</li>
+          <li><strong>Updates the RSS feed</strong> at <a href="feed.xml">feed.xml</a>. Add it to any reader (Feedly, Inoreader, Slack's RSS app).</li>
+          <li><strong>Sends a phone push via ntfy</strong> (optional). Install the free <a href="https://ntfy.sh" rel="noopener">ntfy</a> app, subscribe to a hard-to-guess topic name, and save that name as the repository secret <code>NTFY_TOPIC</code>.</li>
+        </ul>
+        <p class="muted">"NEW" badges on this page mark openings that appeared since your last visit in this browser, and "UPDATED" marks a scheme job list that changed since then. Applied and hidden marks are also kept in this browser only.</p>
+        <p class="muted">Some university pages, such as CityU's, sit behind a bot check that can stop the automatic check. When that happens, the scheme card says so and shows the date last confirmed.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <span>Sources: company careers sites (Workday, Greenhouse, Oracle, Eightfold, SuccessFactors, Oleeo, PageUp, Ashby…), university internship scheme pages, and LinkedIn's public job search for Hong Kong.</span>
+    <a href="feed.xml">RSS</a>
+  </footer>
+
+  <template id="tpl-company">
+    <article class="card company">
+      <div class="chead">
+        <div>
+          <h3 class="cname"></h3>
+          <span class="chip ccat"></span>
+        </div>
+        <div class="clinks">
+          <a class="btn careers" target="_blank" rel="noopener">Careers ↗</a>
+          <a class="btn ghost li" target="_blank" rel="noopener">LinkedIn HK ↗</a>
+        </div>
+      </div>
+      <p class="note"></p>
+      <ul class="jobs"></ul>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>

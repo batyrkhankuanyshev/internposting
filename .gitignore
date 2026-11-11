@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+new_jobs.md
+.DS_Store
